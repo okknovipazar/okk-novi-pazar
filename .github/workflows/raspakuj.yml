@@ -1,0 +1,22 @@
+
+name: Raspakuj sajt
+on:
+  push:
+    paths:
+      - '.github/workflows/raspakuj.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Raspakuj fajlove
+        run: |
+          unzip -o OKK_Novi_Pazar_Sajt_Sa_Admin_Panelom-2.zip -d .
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Dodaj kompletan sajt" || exit 0
+          git push
