@@ -75,6 +75,16 @@ content:
       - name: away
         label: Gostujući tim
         type: string
+      - name: home_logo
+        label: Grb domaćina
+        type: image
+        options:
+        media: slike
+      - name: away_logo
+        label: Grb gostiju
+        type: image
+        options:
+        media: slike
       - name: venue
         label: Dvorana / mesto
         type: string
