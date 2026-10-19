@@ -1,0 +1,26 @@
+[
+  {
+    "round": "2. KOLO",
+    "date": "2026-10-18",
+    "time": "18:00",
+    "home": "NOVI PAZAR",
+    "away": "POLET RATINA",
+    "venue": "Dvorana Doguš, Novi Pazar",
+    "status": "zavrsena",
+    "home_score": 97,
+    "away_score": 80,
+    "note": "Druga pobeda u drugoj utakmici sezone."
+  },
+  {
+    "round": "3. KOLO · DERBI KOLA",
+    "date": "2026-10-25",
+    "time": "18:00",
+    "home": "ŠABAC",
+    "away": "NOVI PAZAR",
+    "venue": "Šabačka gimnazija, Šabac",
+    "status": "zakazana",
+    "home_score": null,
+    "away_score": null,
+    "note": "Derbi kola. Vidimo se u Šapcu!"
+  }
+]

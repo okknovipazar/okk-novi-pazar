@@ -1,0 +1,93 @@
+[
+  {
+    "number": "00",
+    "name": "Ahmed Dolovac",
+    "image": "/assets/players/ahmed-dolovac-card.webp",
+    "image_full": "/assets/players/ahmed-dolovac-full.webp",
+    "position": ""
+  },
+  {
+    "number": "1",
+    "name": "Džejlan Muratović",
+    "image": "/assets/players/dzejlan-muratovic-card.webp",
+    "image_full": "/assets/players/dzejlan-muratovic-full.webp",
+    "position": ""
+  },
+  {
+    "number": "5",
+    "name": "Edin Mavrić",
+    "image": "/assets/players/edin-mavric-card.webp",
+    "image_full": "/assets/players/edin-mavric-full.webp",
+    "position": ""
+  },
+  {
+    "number": "6",
+    "name": "Mehmed Crnišanin",
+    "image": "/assets/players/mehmed-crnisanin-card.webp",
+    "image_full": "/assets/players/mehmed-crnisanin-full.webp",
+    "position": ""
+  },
+  {
+    "number": "7",
+    "name": "Asmir Numanović",
+    "image": "/assets/players/asmir-numanovic-card.webp",
+    "image_full": "/assets/players/asmir-numanovic-full.webp",
+    "position": ""
+  },
+  {
+    "number": "8",
+    "name": "Kadir Zornić",
+    "image": "/assets/players/kadir-zornic-card.webp",
+    "image_full": "/assets/players/kadir-zornic-full.webp",
+    "position": ""
+  },
+  {
+    "number": "9",
+    "name": "Muhamed Salihović",
+    "image": "/assets/players/muhamed-salihovic-card.webp",
+    "image_full": "/assets/players/muhamed-salihovic-full.webp",
+    "position": ""
+  },
+  {
+    "number": "11",
+    "name": "Živan Rankić",
+    "image": "/assets/players/zivan-rankic-card.webp",
+    "image_full": "/assets/players/zivan-rankic-full.webp",
+    "position": ""
+  },
+  {
+    "number": "13",
+    "name": "Željko Milić",
+    "image": "/assets/players/zeljko-milic-card.webp",
+    "image_full": "/assets/players/zeljko-milic-full.webp",
+    "position": ""
+  },
+  {
+    "number": "15",
+    "name": "Omar Muratović",
+    "image": "/assets/players/omar-muratovic-card.webp",
+    "image_full": "/assets/players/omar-muratovic-full.webp",
+    "position": ""
+  },
+  {
+    "number": "17",
+    "name": "Altin Islamović",
+    "image": "/assets/players/altin-islamovic-card.webp",
+    "image_full": "/assets/players/altin-islamovic-full.webp",
+    "position": ""
+  },
+  {
+    "number": "22",
+    "name": "Enis Đulović",
+    "image": "/assets/players/enis-djulovic-card.webp",
+    "image_full": "/assets/players/enis-djulovic-full.webp",
+    "position": ""
+  },
+  {
+    "number": "25",
+    "name": "Besim Brunčević",
+    "image": "/assets/players/besim-bruncevic-card.webp",
+    "image_full": "/assets/players/besim-bruncevic-full.webp",
+    "position": ""
+  }
+]

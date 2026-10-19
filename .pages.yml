@@ -1,0 +1,172 @@
+# Uređivanje: https://app.pagescms.org — prijava GitHub nalogom
+# Sadržaj se čuva u GitHub-u. Netlify objavljuje izmene kad je povezan s repozitorijumom.
+media:
+  - name: slike
+    label: Fotografije za vesti
+    input: media
+    output: /media
+    rename: safe
+    extensions: [jpg, jpeg, png, webp]
+  - name: igraci
+    label: Fotografije igrača
+    input: assets/players
+    output: /assets/players
+    rename: safe
+    extensions: [jpg, jpeg, png, webp]
+content:
+  - name: vesti
+    label: Vesti i objave
+    type: file
+    path: data/news.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Naslov vesti
+        type: string
+        required: true
+      - name: date
+        label: Datum objave
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: category
+        label: Vrsta vesti
+        type: select
+        options:
+          values: [Najava utakmice, Izveštaj, Klub, Obaveštenje, Intervju]
+      - name: summary
+        label: Kratak opis za naslovnu stranu
+        type: text
+      - name: body
+        label: Tekst vesti
+        type: text
+        description: Svaki novi red se na sajtu prikazuje kao novi pasus.
+      - name: image
+        label: Fotografija vesti
+        type: image
+        options:
+          media: slike
+      - name: published
+        label: Objavljena vest
+        type: boolean
+
+  - name: utakmice
+    label: Utakmice i rezultati
+    type: file
+    path: data/matches.json
+    format: json
+    list: true
+    fields:
+      - name: round
+        label: Kolo / oznaka utakmice
+        type: string
+      - name: date
+        label: Datum
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: time
+        label: Vreme (npr. 18:00)
+        type: string
+      - name: home
+        label: Domaći tim
+        type: string
+      - name: away
+        label: Gostujući tim
+        type: string
+      - name: venue
+        label: Dvorana / mesto
+        type: string
+      - name: status
+        label: Status
+        type: select
+        options:
+          values:
+            - name: zakazana
+              label: Zakazana utakmica
+            - name: zavrsena
+              label: Završena utakmica
+      - name: home_score
+        label: Poeni domaćina (samo za završene)
+        type: number
+      - name: away_score
+        label: Poeni gostiju (samo za završene)
+        type: number
+      - name: note
+        label: Kratak komentar
+        type: text
+
+  - name: igraci
+    label: Igrači i fotografije
+    type: file
+    path: data/players.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Ime i prezime
+        type: string
+      - name: number
+        label: Broj dresa (npr. 00)
+        type: string
+      - name: position
+        label: Pozicija (opciono)
+        type: string
+      - name: image
+        label: Fotografija za karticu
+        type: image
+        options:
+          media: igraci
+      - name: image_full
+        label: Velika fotografija (opciono)
+        type: image
+        options:
+          media: igraci
+
+  - name: podesavanja
+    label: Tekstovi i društvene mreže
+    type: file
+    path: data/settings.json
+    format: json
+    fields:
+      - name: hero_subtitle
+        label: Tekst na početnoj strani
+        type: text
+      - name: about_text
+        label: Tekst o klubu
+        type: text
+      - name: partner_text
+        label: Tekst za sponzore
+        type: text
+      - name: season_record
+        label: Pobede (npr. 2/2)
+        type: string
+      - name: coach_name
+        label: Ime trenera
+        type: string
+      - name: coach_title
+        label: Uloga trenera
+        type: string
+      - name: coach_photo
+        label: Slika trenera
+        type: image
+        options:
+          media: igraci
+      - name: coach_photo_full
+        label: Velika slika trenera
+        type: image
+        options:
+          media: igraci
+      - name: instagram
+        label: Instagram adresa
+        type: string
+      - name: facebook
+        label: Facebook adresa
+        type: string
+      - name: email
+        label: Kontakt e-mail
+        type: string
+      - name: phone
+        label: Kontakt telefon
+        type: string

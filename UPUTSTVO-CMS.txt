@@ -1,0 +1,16 @@
+OKK Novi Pazar — sajt sa besplatnim Pages CMS uređivanjem
+
+VAŽNO: ovaj ZIP priprema sajt za administraciju, ali sam po sebi NE povezuje naloge.
+
+Jednokratno podešavanje:
+1. Otvori github.com, napravi nalog ako ga nemaš.
+2. Napravi novi repozitorijum npr. okk-novi-pazar-sajt i dodaj fajlove iz ovog ZIP-a u KOREN repozitorijuma (posebno .pages.yml, index.html, data, assets, media, admin).
+3. Otvori app.pagescms.org, prijavi se preko GitHub-a, ovlasti Pages CMS za pristup svom repozitorijumu i izaberi ga.
+4. U Netlify (app.netlify.com) otvori SVOJ POSTOJEĆI SAJT > Project configuration / Build & deploy > Continuous deployment > Link repository ili Connect to Git, zatim izaberi isti GitHub repozitorijum. Raspored menija zavisi od interfejsa. Ako je dostupno, objavi branch main, a publish direktorijum postavi na . (koren). Nije potrebna build komanda.
+5. Kada povežeš repo, u Pages CMS klikni Vesti ili Utakmice, dodaj izmenu i sačuvaj. GitHub šalje izmenu Netlify-u, a Netlify objavljuje novu verziju na istoj adresi.
+
+STRUKTURA:
+data/news.json - tekstovi/vesti; data/matches.json - utakmice i rezultati; data/players.json - 13 igrača; data/settings.json - kontakt, mreže i tekstovi.
+media - novo otpremljene fotografije. admin/index.html - link do bezbedne prijave na Pages CMS; taj ekran sam po sebi ne čuva ništa.
+
+Ako ručno postaviš ZIP na Netlify bez GitHub povezivanja, sajt će se prikazivati, ali izmene kroz Pages CMS neće automatski izlaziti na javnu adresu.
