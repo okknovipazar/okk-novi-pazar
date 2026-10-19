@@ -79,12 +79,12 @@ content:
         label: Grb domaćina
         type: image
         options:
-        media: slike
+          media: slike
       - name: away_logo
         label: Grb gostiju
         type: image
         options:
-        media: slike
+          media: slike
       - name: venue
         label: Dvorana / mesto
         type: string
