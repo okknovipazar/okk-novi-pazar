@@ -140,9 +140,19 @@ content:
     path: data/settings.json
     format: json
     fields:
-      - name: hero_subtitle
-        label: Tekst na početnoj strani
-        type: text
+      
+    - name: hero_title
+      label: Veliki naslov početne strane
+      type: string
+    - name: hero_background
+      label: Pozadinska slika početne strane
+      type: image
+      options:
+        media: slike
+
+    - name: hero_subtitle
+      label: Tekst na početnoj strani
+      type: text
       - name: about_text
         label: Tekst o klubu
         type: text
