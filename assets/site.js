@@ -108,7 +108,7 @@ if (s.startsWith('assets/') || s.startsWith('media/')) return s;
   function renderSettings(settings) {
     if (!settings) return;
     
-    put('.hero-title', settings.hero_title);
+    put('#hero-title', settings.hero_title);
         if (settings.hero_background) {
       const hero = $('.hero');
       if (hero) hero.style.backgroundImage = `url("${safeUrl(settings.hero_background)}")`;
