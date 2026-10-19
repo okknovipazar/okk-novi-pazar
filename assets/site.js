@@ -107,6 +107,13 @@ if (s.startsWith('assets/') || s.startsWith('media/')) return s;
 
   function renderSettings(settings) {
     if (!settings) return;
+    
+    put('.hero-title', settings.hero_title);
+        if (settings.hero_background) {
+      const hero = $('.hero');
+      if (hero) hero.style.backgroundImage = `url("${safeUrl(settings.hero_background)}")`;
+        }
+
     put('.hero-p', settings.hero_subtitle);
     put('.history-copy', settings.about_text);
     put('.partner-inner p', settings.partner_text);
