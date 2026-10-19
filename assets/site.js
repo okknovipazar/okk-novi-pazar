@@ -18,7 +18,8 @@
   const safeUrl = v => {
     if (typeof v !== 'string') return '';
     const s = v.trim();
-    if (s.startsWith('/assets/') || s.startsWith('/media/') || s.startsWith('assets/') || s.startsWith('media/')) return s;
+    if (s.startsWith('/assets/') || s.startsWith('/media/')) return '.' + s;
+if (s.startsWith('assets/') || s.startsWith('media/')) return s;
     if (/^https:\/\//i.test(s)) return s;
     return '';
   };
