@@ -202,7 +202,15 @@ if (s.startsWith('assets/') || s.startsWith('media/')) return s;
         const img = make('img'); img.src = 'assets/logo.png'; img.alt = team;
         img.style.cssText = 'width:85%;height:85%;object-fit:contain;';
         el.append(img);
-      } else el.textContent = String(team || '—').slice(0, 2).toLocaleUpperCase('sr');
+      } else if (String(team || '').toLocaleLowerCase('sr').includes('šabac')) {
+  const img = make('img');
+  img.src = 'media/cropped-okk-sabac-logo-KONSTRUISANI-04-1.png';
+  img.alt = team;
+  img.style.cssText = 'width:85%;height:85%;object-fit:contain;';
+  el.append(img);
+} else {
+  el.textContent = String(team || '—').slice(0, 2).toLocaleUpperCase('sr');
+      }
     });
     put('.match-details .date', fmtDate(game.date));
     put('.match-details .place', game.venue || 'Dvorana će biti objavljena');
