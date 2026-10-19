@@ -198,7 +198,14 @@ if (s.startsWith('assets/') || s.startsWith('media/')) return s;
       const team = index === 0 ? game.home : game.away;
       el.setAttribute('aria-label', team);
       el.textContent = '';
-      if (isClub(team)) {
+      const logo = index === 0 ? game.home_logo : game.away_logo;
+if (logo) {
+        const img = make('img');
+  img.src = safeUrl(logo);
+  img.alt = team;
+  img.style.cssText = 'width:85%;height:85%;object-fit:contain;';
+  el.append(img);
+} else if (isClub(team)) {
         const img = make('img'); img.src = 'assets/logo.png'; img.alt = team;
         img.style.cssText = 'width:85%;height:85%;object-fit:contain;';
         el.append(img);
