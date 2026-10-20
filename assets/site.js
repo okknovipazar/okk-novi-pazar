@@ -255,7 +255,16 @@ if (logo) {
     renderMatchList(games);
     renderHeroGame(upcoming[0]);
   }
-
+function newsSlug(entry) {
+  return (String(entry.date || '') + '-' + String(entry.title || ''))
+    .toLowerCase()
+    .replace(/đ/g, 'dj')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 100);
+}
   function renderNews(news) {
     if (!Array.isArray(news)) return;
     const grid = $('.news-grid');
@@ -286,7 +295,7 @@ if (logo) {
       const share = make('button', 'news-read', '↗ Podeli');
 share.type = 'button';
 share.addEventListener('click', async () => {
-  const url = window.location.href.split('#')[0] + '#vesti';
+  const url = new URL('vesti/' + newsSlug(entry) + '/', document.baseURI).href;
   const data = { title: entry.title, url };
   if (navigator.share) {
     try {
