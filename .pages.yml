@@ -134,7 +134,7 @@ content:
         options:
           media: igraci
 
-    - name: podesavanja
+  - name: podesavanja
     label: Tekstovi i društvene mreže
     type: file
     path: data/settings.json
