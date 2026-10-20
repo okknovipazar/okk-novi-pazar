@@ -283,7 +283,21 @@ if (logo) {
       read.type = 'button';
       read.addEventListener('click', () => openModal(`${fmtDate(entry.date)} · ${upper(entry.category)}`,
         upper(entry.title), entry.body || entry.summary || '', cover, entry.title));
-      content.append(meta,title,summary,read);
+      const share = make('button', 'news-read', '↗ Podeli');
+share.type = 'button';
+share.addEventListener('click', async () => {
+  const url = window.location.href.split('#')[0] + '#vesti';
+  const data = { title: entry.title, url };
+  if (navigator.share) {
+    try {
+      await navigator.share(data);
+    } catch (e) {}
+  } else {
+    window.prompt('Kopiraj link:', url);
+  }
+});
+
+      content.append(meta,title,summary,read,share);
       art.append(visual,content);
       grid.append(art);
     });
