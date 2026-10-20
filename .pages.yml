@@ -135,11 +135,11 @@ content:
           media: igraci
 
       - name: podesavanja
-      label: Tekstovi i društvene mreže
-      type: file
-      path: data/settings.json
-      format: json
-      fields:
+        label: Tekstovi i društvene mreže
+        type: file
+        path: data/settings.json
+        format: json
+        fields:
           - name: hero_title
             label: Veliki naslov početne strane
             type: string
