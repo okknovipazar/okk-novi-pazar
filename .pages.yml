@@ -140,7 +140,6 @@ content:
     path: data/settings.json
     format: json
     fields:
-      
     - name: hero_title
       label: Veliki naslov početne strane
       type: string
@@ -153,40 +152,40 @@ content:
     - name: hero_subtitle
       label: Tekst na početnoj strani
       type: text
-      - name: about_text
+    - name: about_text
         label: Tekst o klubu
         type: text
-      - name: partner_text
+    - name: partner_text
         label: Tekst za sponzore
         type: text
-      - name: season_record
+    - name: season_record
         label: Pobede (npr. 2/2)
         type: string
-      - name: coach_name
+    - name: coach_name
         label: Ime trenera
         type: string
-      - name: coach_title
+    - name: coach_title
         label: Uloga trenera
         type: string
-      - name: coach_photo
+    - name: coach_photo
         label: Slika trenera
         type: image
         options:
           media: igraci
-      - name: coach_photo_full
+    - name: coach_photo_full
         label: Velika slika trenera
         type: image
         options:
           media: igraci
-      - name: instagram
+    - name: instagram
         label: Instagram adresa
         type: string
-      - name: facebook
+    - name: facebook
         label: Facebook adresa
         type: string
-      - name: email
+    - name: email
         label: Kontakt e-mail
         type: string
-      - name: phone
+    - name: phone
         label: Kontakt telefon
         type: string
