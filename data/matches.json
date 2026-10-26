@@ -18,9 +18,12 @@
     "home": "ŠABAC",
     "away": "NOVI PAZAR",
     "venue": "Šabačka gimnazija, Šabac",
-    "status": "zakazana",
-    "home_score": null,
-    "away_score": null,
-    "note": "Derbi kola. Vidimo se u Šapcu!"
+    "status": "zavrsena",
+    "home_score": 85,
+    "away_score": 73
+  },
+  {
+    "round": "3",
+    "date": "2026-10-26"
   }
 ]
