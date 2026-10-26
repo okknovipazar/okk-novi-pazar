@@ -29,6 +29,9 @@
     "home": "OKK NOVI PAZAR",
     "away": "KK POŽAREVAC",
     "home_logo": "/media/images-3.jpg",
-    "away_logo": "/media/okk-novi-pazar-logo.png"
+    "away_logo": "/media/okk-novi-pazar-logo.png",
+    "venue": "DOGUŠ DVORANA",
+    "status": "zakazana",
+    "note": "DERBI KOLA"
   }
 ]
