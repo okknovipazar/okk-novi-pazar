@@ -22,8 +22,12 @@ jobs:
         with:
           python-version: '3.12'
 
+      
       - name: Proveri DIGITAL Score TV
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python scripts/dscore_sync.py
+
 
       - name: Sacuvaj novi video
         run: |
