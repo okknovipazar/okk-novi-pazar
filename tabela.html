@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabela | OKK Novi Pazar</title>
+<style>
+body {
+  margin: 0;
+  background: #08132e;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 25px 15px;
+}
+h1 { text-align: center; }
+a { color: #9fbdff; }
+.scroll { overflow-x: auto; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #142750;
+}
+th, td {
+  padding: 13px 10px;
+  text-align: center;
+  border-bottom: 1px solid #354871;
+}
+th { background: #2859ce; }
+td:nth-child(2), th:nth-child(2) {
+  text-align: left;
+}
+.club {
+  background: #295ce7;
+  font-weight: bold;
+}
+p { text-align: center; }
+</style>
+</head>
+<body>
+<main>
+<a href="./">← Početna stranica</a>
+<h1>PRVA MUŠKA REGIONALNA LIGA ZAPAD</h1>
+<p>SEZONA 2026/27.</p>
+<div class="scroll">
+<table>
+<thead>
+<tr>
+<th>#</th><th>Klub</th><th>UT</th>
+<th>P</th><th>I</th><th>Koševi</th>
+<th>+/-</th><th>Bod</th>
+</tr>
+</thead>
+<tbody id="tabela">
+<tr><td colspan="8">Učitavanje...</td></tr>
+</tbody>
+</table>
+</div>
+<p id="azurirano"></p>
+<p>Izvor: <a href="https://rkscs.rs/takmicenja?izvor=dscore&liga=283&tab=tabela">RKSCS</a></p>
+</main>
+<script>
+async function ucitajTabelu() {
+  const tbody = document.getElementById("tabela");
+  try {
+    const response = await fetch(
+      "./data/rkscs.json",
+      {cache: "no-store"}
+    );
+    if (!response.ok) throw new Error("Nema podataka");
+    const data = await response.json();
+    tbody.replaceChildren();
+
+    data.tabela.forEach(tim => {
+      const tr = document.createElement("tr");
+      if (tim.tim.toLowerCase().includes("novi pazar")) {
+        tr.className = "club";
+      }
+      [
+        tim.pozicija, tim.tim, tim.odigrano,
+        tim.pobede, tim.porazi, tim.kosevi,
+        tim.razlika, tim.bodovi
+      ].forEach(vrednost => {
+        const td = document.createElement("td");
+        td.textContent = vrednost;
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+
+    document.getElementById("azurirano").textContent =
+      "Poslednje ažuriranje: " +
+      new Date(data.azurirano).toLocaleString("sr-RS");
+  } catch (error) {
+    tbody.innerHTML =
+      '<tr><td colspan="8">Tabela trenutno nije dostupna.</td></tr>';
+  }
+}
+ucitajTabelu();
+</script>
+</body>
+</html>
