@@ -1,17 +1,7 @@
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const card = document.querySelector(".match-card");
-  if (!card) return;
-
-  const link = document.createElement("a");
-  link.href = "uzivo.html?v=2";
-  link.textContent = "▶ PRENOSI I SNIMCI";
-  link.style.cssText =
-    "display:block;padding:17px;background:#295ce7;" +
-    "color:white;text-align:center;text-decoration:none;" +
-    "font-weight:800;letter-spacing:.08em";
-
-  card.appendChild(link);
-});
-</script>
+{
+  "title": "Trenutno nema dostupnog snimka",
+  "date": "",
+  "score": "",
+  "youtube_url": ""
+}
