@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rezultati | OKK Novi Pazar</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #08132e;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px 15px 60px;
+}
+a { color: #9fbdff; }
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+.subtitle {
+  text-align: center;
+  color: #abbde7;
+}
+.selector {
+  margin: 30px auto;
+  text-align: center;
+}
+select {
+  padding: 14px 25px;
+  background: #2859ce;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+.match {
+  background: #152952;
+  border: 1px solid #304777;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 13px;
+}
+.match.club {
+  border-left: 5px solid #65a2ff;
+  background: #20468b;
+}
+.teams {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+}
+.team { flex: 1; font-weight: bold; }
+.away { text-align: right; }
+.score {
+  font-size: 23px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.details {
+  margin-top: 13px;
+  font-size: 12px;
+  color: #c3d2f2;
+}
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #abbde7;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+<main>
+<a href="./">← Početna stranica</a>
+
+<h1>UTAKMICE I REZULTATI</h1>
+<p class="subtitle">
+PRVA MUŠKA REGIONALNA LIGA ZAPAD · 2026/27
+</p>
+
+<div class="selector">
+  <select id="kolo" aria-label="Izaberi kolo"></select>
+</div>
+
+<div id="utakmice">Učitavanje rezultata...</div>
+<div class="footer" id="azurirano"></div>
+
+<p class="footer">
+Izvor:
+<a href="https://rkscs.rs/takmicenja?izvor=dscore&liga=283&tab=raspored">
+RKSCS
+</a>
+</p>
+</main>
+
+<script>
+async function pokreni() {
+  const prikaz = document.getElementById("utakmice");
+  const izbor = document.getElementById("kolo");
+
+  try {
+    const odgovor = await fetch(
+      "./data/rkscs_rezultati.json",
+      { cache: "no-store" }
+    );
+
+    if (!odgovor.ok) throw new Error("Nema podataka");
+
+    const podaci = await odgovor.json();
+    const utakmice = podaci.utakmice;
+
+    const kola = [...new Set(
+      utakmice.map(u => u.kolo)
+    )].sort((a, b) => a - b);
+
+    kola.forEach(broj => {
+      const opcija = document.createElement("option");
+      opcija.value = broj;
+      opcija.textContent = broj + ". KOLO";
+      izbor.appendChild(opcija);
+    });
+
+    function prikazi(broj) {
+      prikaz.replaceChildren();
+
+      utakmice
+        .filter(u => u.kolo === Number(broj))
+        .forEach(u => {
+          const kartica = document.createElement("article");
+          kartica.className = "match";
+
+          if (
+            /novi pazar/i.test(u.domacin) ||
+            /novi pazar/i.test(u.gost)
+          ) {
+            kartica.classList.add("club");
+          }
+
+          const red = document.createElement("div");
+          red.className = "teams";
+
+          const domacin = document.createElement("span");
+          domacin.className = "team";
+          domacin.textContent = u.domacin;
+
+          const gost = document.createElement("span");
+          gost.className = "team away";
+          gost.textContent = u.gost;
+
+          const skor = document.createElement("span");
+          skor.className = "score";
+          skor.textContent = u.status === "zavrsena"
+            ? u.poeni_domacin + " : " + u.poeni_gost
+            : "VS";
+
+          red.append(domacin, skor, gost);
+
+          const detalji = document.createElement("div");
+          detalji.className = "details";
+          const datum = u.datum.split("-").reverse().join(".");
+          detalji.textContent = datum + " · " +
+            u.vreme + " · " +
+            (u.status === "zavrsena"
+              ? "Konačan rezultat"
+              : "Zakazana utakmica");
+
+          kartica.append(red, detalji);
+          prikaz.appendChild(kartica);
+        });
+    }
+
+    const sledeca = utakmice.find(
+      u => u.status !== "zavrsena"
+    );
+
+    izbor.value = sledeca
+      ? sledeca.kolo
+      : kola[kola.length - 1];
+
+    prikazi(izbor.value);
+
+    izbor.addEventListener("change", () => {
+      prikazi(izbor.value);
+    });
+
+    document.getElementById("azurirano").textContent =
+      "Poslednje ažuriranje: " +
+      new Date(podaci.azurirano).toLocaleString("sr-RS");
+
+  } catch (greska) {
+    prikaz.textContent =
+      "Rezultati trenutno nisu dostupni.";
+  }
+}
+
+pokreni();
+</script>
+</body>
+</html>
