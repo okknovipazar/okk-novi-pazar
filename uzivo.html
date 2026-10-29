@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08132e">
+  <meta name="description" content="Prenosi i snimci utakmica OKK Novi Pazar — Digital Score TV, rezultati uživo i video arhiva.">
+  <title>Uživo i video | OKK Novi Pazar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#08132e;--blue:#295ce7;--gold:#f1bc5e;--muted:#75819b;--pale:#f4f6fb;--ink:#142141;--line:#e2e8f3}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--pale);font-family:'DM Sans',Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;cursor:pointer}
+    .container{max-width:1140px;width:calc(100% - 36px);margin:auto}
+    .topbar{background:#08132e;color:#fff;border-bottom:1px solid #ffffff26}
+    .topinner{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:15px 0;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px;font:800 24px/1 'Barlow Condensed',Arial,sans-serif}
+    .brand img{width:55px;height:55px;object-fit:contain}
+    .brand small{display:block;font:700 9px/1.5 'DM Sans',sans-serif;letter-spacing:.16em;color:#b7c8ff;margin-top:6px}
+    nav{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+    nav a{font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#cbd5eb}
+    nav a[aria-current="page"]{color:#fff;border-bottom:2px solid var(--gold);padding:0 0 8px}
+    nav a:hover{color:#fff}
+    .hero{background:radial-gradient(circle at 80% 0%,#2858ba 0%,#112956 39%,#08132e 95%);color:#fff;padding:65px 0 52px}
+    .kicker{letter-spacing:.19em;font-size:11px;font-weight:800;color:#b2c7ff}
+    h1{font:900 clamp(60px,9vw,110px)/.92 'Barlow Condensed',Arial,sans-serif;letter-spacing:-.012em;margin:12px 0;text-transform:uppercase}
+    .hero p{color:#cbd8f6;max-width:650px;font-size:14px;line-height:1.8;margin-bottom:0}
+    .layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(250px,.8fr);gap:24px;padding-top:36px;padding-bottom:65px}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 12px 38px #0a1b4110}
+    .panelhead{padding:22px 25px;border-bottom:1px solid var(--line)}
+    .eyebrow{color:var(--blue);font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+    h2{font:800 32px/1.03 'Barlow Condensed',Arial,sans-serif;margin:7px 0;text-transform:uppercase}
+    .subtitle{font-size:12px;color:var(--muted);line-height:1.6}
+    .screen{position:relative;background:linear-gradient(145deg,#07122d,#183d82);aspect-ratio:16/9;display:grid;place-items:center;overflow:hidden}
+    .screen:before{content:'OKK';position:absolute;font:900 clamp(110px,22vw,240px)/1 'Barlow Condensed',Arial,sans-serif;color:#ffffff0b;transform:rotate(-12deg)}
+    .screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#07122d}
+    .play{position:relative;z-index:1;background:#fff;color:#0b255b;border:0;border-radius:5px;padding:15px 20px;text-transform:uppercase;letter-spacing:.07em;font-size:12px;font-weight:900}
+    .screen-msg{position:relative;z-index:1;text-align:center;color:#d6e4ff;padding:20px;line-height:1.6}
+    .panelbody{padding:23px 25px}
+    .video-title{font:800 28px/1.1 'Barlow Condensed',Arial,sans-serif;text-transform:uppercase;margin:0 0 8px}
+    .actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:12px 16px;border-radius:5px;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+    .btn-primary{background:var(--blue);color:#fff}
+    .btn-light{background:#eaf0ff;color:#173e9c}
+    .side{display:grid;gap:16px;align-content:start}
+    .linkbox{display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px;transition:transform .18s,border-color .18s}
+    .linkbox:hover{transform:translateY(-2px);border-color:#8caaf8}
+    .linkbox strong{display:block;font:800 27px 'Barlow Condensed',Arial,sans-serif;text-transform:uppercase;margin:7px 0}
+    .linkbox p{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 13px}
+    .go{font-size:11px;color:#1d50cb;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+    .notice{font-size:12px;line-height:1.8;color:#687894;padding:17px;background:#eaf0fb;border-radius:8px}
+    footer{background:#08132e;color:#94acd7;font-size:12px;padding:26px 0}
+    footer a{color:#c2d6ff}
+    @media(max-width:800px){.layout{grid-template-columns:1fr}.hero{padding:47px 0 39px}.topinner{align-items:flex-start}.brand{font-size:22px}nav{gap:12px}.panelhead,.panelbody{padding:20px}.side{grid-template-columns:1fr}}
+    @media(max-width:480px){nav a{font-size:10px}.container{width:calc(100% - 26px)}h2{font-size:28px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topinner">
+      <a class="brand" href="./"><img src="assets/logo.png" alt="Grb OKK Novi Pazar"><span>OKK NOVI PAZAR<small>KOŠARKAŠKI KLUB · 1969</small></span></a>
+      <nav aria-label="Glavna navigacija">
+        <a href="./">Početna</a><a href="./#utakmice">Utakmice</a><a href="tabela.html">Tabela</a><a href="rezultati.html?v=20261029">Rezultati</a><a href="./#vesti">Vesti</a><a href="uzivo.html" aria-current="page">Uživo / Video</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero"><div class="container">
+      <div class="kicker">PRENOSI · SNIMCI · DIGITAL SCORE TV</div>
+      <h1>Gledaj Novi Pazar.</h1>
+      <p>Video-prenosi i snimci utakmica našeg kluba, uz linkove ka DScore praćenju rezultata i zvaničnom YouTube kanalu. Kada je snimak dozvoljen za ugrađivanje, gledaj ga direktno ovde.</p>
+    </div></section>
+    <div class="container layout">
+      <section class="panel" aria-labelledby="video-heading">
+        <div class="panelhead"><div class="eyebrow">VIDEO ARHIVA</div><h2 id="video-heading">Poslednji objavljeni snimak</h2><div class="subtitle" id="video-date">Učitavanje podataka o videu…</div></div>
+        <div class="screen" id="video-box"><div class="screen-msg" id="video-loading">Učitavanje snimka…</div></div>
+        <div class="panelbody"><p class="video-title" id="video-title">Utakmice OKK Novi Pazar</p><p class="subtitle" id="video-info">Video se prikazuje kada je link dostupan u klupskoj arhivi.</p>
+          <div class="actions"><a id="yt-video" class="btn btn-primary" href="https://www.youtube.com/@digitalscoretv/streams" target="_blank" rel="noopener noreferrer">Otvori video na YouTube-u ↗</a><a class="btn btn-light" href="https://www.youtube.com/@digitalscoretv/videos" target="_blank" rel="noopener noreferrer">Svi DScore snimci ↗</a></div>
+        </div>
+      </section>
+      <aside class="side">
+        <a class="linkbox" href="https://dscore.live/" target="_blank" rel="noopener noreferrer"><span class="eyebrow">REZULTATI UŽIVO</span><strong>DScore uživo</strong><p>Praćenje rezultata i podataka o utakmicama direktno preko DScore platforme.</p><span class="go">Prati rezultate ↗</span></a>
+        <a class="linkbox" href="https://tv.dscore.live/" target="_blank" rel="noopener noreferrer"><span class="eyebrow">SPORTSKI PRENOSI</span><strong>DScore TV</strong><p>Otvori raspoložive direktne prenose na zvaničnoj DScore TV platformi.</p><span class="go">Pogledaj prenose ↗</span></a>
+        <a class="linkbox" href="https://www.youtube.com/@digitalscoretv/streams" target="_blank" rel="noopener noreferrer"><span class="eyebrow">YOUTUBE KANAL</span><strong>DIGITAL Score TV</strong><p>Proveri najavljene i aktuelne prenose, kao i ranije emitovane utakmice.</p><span class="go">YouTube prenosi ↗</span></a>
+        <div class="notice">Prenosi nisu dostupni za svaku utakmicu. Ako YouTube autor onemogući prikaz na drugim sajtovima, klikni na dugme za gledanje direktno na YouTube-u. Video se ne označava kao „uživo“ bez potvrde da je emitovanje aktivno.</div>
+      </aside>
+    </div>
+  </main>
+  <footer><div class="container">© OKK Novi Pazar · Izvori video-sadržaja: vlasnici YouTube kanala i DScore. <a href="./">Nazad na početnu</a></div></footer>
+  <script>
+  (()=>{
+    'use strict';
+    const box=document.getElementById('video-box');
+    const title=document.getElementById('video-title');
+    const date=document.getElementById('video-date');
+    const info=document.getElementById('video-info');
+    const button=document.getElementById('yt-video');
+    function youtubeVideoId(link){
+      try{
+        const u=new URL(link);
+        const host=u.hostname.toLowerCase();
+        let id='';
+        if(host==='youtu.be') id=u.pathname.split('/')[1]||'';
+        else if(['youtube.com','www.youtube.com','m.youtube.com'].includes(host)){
+          if(u.pathname==='/watch') id=u.searchParams.get('v')||'';
+          else if(/^\/(live|shorts|embed)\//.test(u.pathname)) id=u.pathname.split('/')[2]||'';
+        }
+        return /^[A-Za-z0-9_-]{11}$/.test(id)?id:null;
+      }catch{return null;}
+    }
+    async function load(){
+      try{
+        const response=await fetch('data/last-video.json',{cache:'no-store'});
+        if(!response.ok) throw new Error('Video nije dostupan');
+        const v=await response.json();
+        const id=youtubeVideoId(v.youtube_url);
+        if(!id) throw new Error('YouTube link nije ispravan');
+        title.textContent=v.title||'OKK Novi Pazar — video utakmice';
+        if(v.date && /^\d{4}-\d{2}-\d{2}$/.test(v.date)) date.textContent=`Objavljeno / datum utakmice: ${v.date.slice(8)}.${v.date.slice(5,7)}.${v.date.slice(0,4)}.`;
+        else date.textContent='Poslednji dostupni video iz klupske evidencije';
+        info.textContent=v.score?`Rezultat: ${v.score}. Video sa YouTube-a.`:'Video sa YouTube-a.';
+        button.href=`https://www.youtube.com/watch?v=${id}`;
+        box.replaceChildren();
+        const play=document.createElement('button');
+        play.className='play';play.type='button';play.textContent='▶ Gledaj na sajtu';
+        play.setAttribute('aria-label','Pokreni YouTube snimak');
+        play.addEventListener('click',()=>{
+          const frame=document.createElement('iframe');
+          frame.src=`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+          frame.title=v.title||'Video utakmice';
+          frame.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+          frame.referrerPolicy='strict-origin-when-cross-origin';
+          frame.allowFullscreen=true;
+          box.replaceChildren(frame);
+        });
+        box.appendChild(play);
+      }catch(error){
+        date.textContent='Trenutno nema upisanog video-linka';
+        info.textContent='Poseti DScore kanal za prenose i snimke.';
+        box.replaceChildren();
+        const p=document.createElement('div');p.className='screen-msg';p.textContent='Kada video-link bude objavljen, snimak će biti dostupan na ovoj stranici.';box.appendChild(p);
+      }
+    }
+    load();
+  })();
+  </script>
+</body>
+</html>
