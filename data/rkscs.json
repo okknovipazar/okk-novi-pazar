@@ -1,0 +1,147 @@
+{
+  "liga": "1. MRL Zapad",
+  "izvor": "https://rkscs.rs/takmicenja?izvor=dscore&liga=283&tab=tabela",
+  "tabela": [
+    {
+      "pozicija": 1,
+      "tim": "Železničar",
+      "odigrano": 3,
+      "pobede": 3,
+      "porazi": 0,
+      "kosevi": "288 : 228",
+      "razlika": 60,
+      "bodovi": 6
+    },
+    {
+      "pozicija": 2,
+      "tim": "Šabac",
+      "odigrano": 3,
+      "pobede": 3,
+      "porazi": 0,
+      "kosevi": "259 : 213",
+      "razlika": 46,
+      "bodovi": 6
+    },
+    {
+      "pozicija": 3,
+      "tim": "Svilajnac",
+      "odigrano": 3,
+      "pobede": 3,
+      "porazi": 0,
+      "kosevi": "220 : 192",
+      "razlika": 28,
+      "bodovi": 6
+    },
+    {
+      "pozicija": 4,
+      "tim": "Novi Pazar",
+      "odigrano": 3,
+      "pobede": 2,
+      "porazi": 1,
+      "kosevi": "240 : 234",
+      "razlika": 6,
+      "bodovi": 5
+    },
+    {
+      "pozicija": 5,
+      "tim": "Miks",
+      "odigrano": 3,
+      "pobede": 2,
+      "porazi": 1,
+      "kosevi": "232 : 241",
+      "razlika": -9,
+      "bodovi": 5
+    },
+    {
+      "pozicija": 6,
+      "tim": "Požarevac",
+      "odigrano": 3,
+      "pobede": 2,
+      "porazi": 1,
+      "kosevi": "237 : 199",
+      "razlika": 38,
+      "bodovi": 5
+    },
+    {
+      "pozicija": 7,
+      "tim": "Prva Petoletka",
+      "odigrano": 3,
+      "pobede": 2,
+      "porazi": 1,
+      "kosevi": "225 : 213",
+      "razlika": 12,
+      "bodovi": 5
+    },
+    {
+      "pozicija": 8,
+      "tim": "Paraćin",
+      "odigrano": 3,
+      "pobede": 2,
+      "porazi": 1,
+      "kosevi": "222 : 209",
+      "razlika": 13,
+      "bodovi": 5
+    },
+    {
+      "pozicija": 9,
+      "tim": "Smederevo 1953",
+      "odigrano": 3,
+      "pobede": 1,
+      "porazi": 2,
+      "kosevi": "214 : 257",
+      "razlika": -43,
+      "bodovi": 4
+    },
+    {
+      "pozicija": 10,
+      "tim": "Babajić",
+      "odigrano": 3,
+      "pobede": 1,
+      "porazi": 2,
+      "kosevi": "169 : 215",
+      "razlika": -46,
+      "bodovi": 4
+    },
+    {
+      "pozicija": 11,
+      "tim": "Zekas 75",
+      "odigrano": 3,
+      "pobede": 0,
+      "porazi": 3,
+      "kosevi": "217 : 232",
+      "razlika": -15,
+      "bodovi": 3
+    },
+    {
+      "pozicija": 12,
+      "tim": "Polet",
+      "odigrano": 3,
+      "pobede": 0,
+      "porazi": 3,
+      "kosevi": "231 : 257",
+      "razlika": -26,
+      "bodovi": 3
+    },
+    {
+      "pozicija": 13,
+      "tim": "Plana",
+      "odigrano": 3,
+      "pobede": 0,
+      "porazi": 3,
+      "kosevi": "203 : 230",
+      "razlika": -27,
+      "bodovi": 3
+    },
+    {
+      "pozicija": 14,
+      "tim": "Napredak Junior",
+      "odigrano": 3,
+      "pobede": 0,
+      "porazi": 3,
+      "kosevi": "234 : 271",
+      "razlika": -37,
+      "bodovi": 3
+    }
+  ],
+  "azurirano": "2026-10-29T11:16:00.197409+00:00"
+}
