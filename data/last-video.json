@@ -1,7 +1,9 @@
-
 {
   "title": "Trenutno nema dostupnog snimka",
   "date": "",
   "score": "",
-  "youtube_url": ""
+  "youtube_url": "",
+  "is_live": false,
+  "live_verified_at": "",
+  "checked_at": "2026-10-29T13:37:49.338088+00:00"
 }
