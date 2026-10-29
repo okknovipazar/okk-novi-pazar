@@ -18,13 +18,19 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Podesi Python
-      
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Test YouTube API kljuca
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           python - <<'PY'
-          import os, json, urllib.parse, urllib.request
+          import os
+          import json
+          import urllib.parse
+          import urllib.request
           import urllib.error
 
           key = os.environ.get("YOUTUBE_API_KEY")
@@ -38,13 +44,12 @@ jobs:
           })
 
           url = "https://www.googleapis.com/youtube/v3/channels?" + params
+
           try:
               with urllib.request.urlopen(url, timeout=20) as r:
                   data = json.load(r)
           except urllib.error.HTTPError as e:
               raise SystemExit(f"YouTube API greska: HTTP {e.code}")
-          except Exception:
-              raise SystemExit("YouTube API nije dostupan.")
 
           if not data.get("items"):
               raise SystemExit("Kanal nije pronadjen.")
@@ -53,16 +58,10 @@ jobs:
           print("Kanal:", data["items"][0]["snippet"]["title"])
           PY
 
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      
       - name: Proveri DIGITAL Score TV
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python scripts/dscore_sync.py
-
 
       - name: Sacuvaj novi video
         run: |
