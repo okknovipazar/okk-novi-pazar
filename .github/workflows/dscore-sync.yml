@@ -1,0 +1,36 @@
+
+name: DScore automatski video
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7,37 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Preuzmi projekat
+        uses: actions/checkout@v4
+
+      - name: Podesi Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Proveri DIGITAL Score TV
+        run: python scripts/dscore_sync.py
+
+      - name: Sacuvaj novi video
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/last-video.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Automatsko azuriranje DScore videa"
+            git push
+          fi
