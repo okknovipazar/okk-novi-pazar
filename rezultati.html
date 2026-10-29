@@ -1,206 +1,180 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rezultati | OKK Novi Pazar</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#08132e">
+<meta name="description" content="Svi rezultati i raspored Prve muške regionalne lige Zapad 2026/27.">
+<title>Rezultati i raspored | OKK Novi Pazar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: #08132e;
-  color: white;
-  font-family: Arial, sans-serif;
-}
-main {
-  max-width: 900px;
-  margin: auto;
-  padding: 25px 15px 60px;
-}
-a { color: #9fbdff; }
-h1 {
-  text-align: center;
-  margin-top: 40px;
-}
-.subtitle {
-  text-align: center;
-  color: #abbde7;
-}
-.selector {
-  margin: 30px auto;
-  text-align: center;
-}
-select {
-  padding: 14px 25px;
-  background: #2859ce;
-  color: white;
-  font-size: 17px;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-}
-.match {
-  background: #152952;
-  border: 1px solid #304777;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 13px;
-}
-.match.club {
-  border-left: 5px solid #65a2ff;
-  background: #20468b;
-}
-.teams {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: space-between;
-}
-.team { flex: 1; font-weight: bold; }
-.away { text-align: right; }
-.score {
-  font-size: 23px;
-  font-weight: bold;
-  white-space: nowrap;
-}
-.details {
-  margin-top: 13px;
-  font-size: 12px;
-  color: #c3d2f2;
-}
-.footer {
-  text-align: center;
-  margin-top: 30px;
-  color: #abbde7;
-  font-size: 13px;
-}
+:root{--navy:#08132e;--deep:#0d1a3a;--blue:#295ce7;--blue2:#4f79ff;--pale:#f4f6fb;--white:#fff;--ink:#142141;--muted:#6a758e;--line:#e2e8f3;--gold:#f1bc5e;--font-display:'Barlow Condensed','Arial Narrow',Impact,sans-serif;--font-body:'DM Sans',Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--pale);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}button,select{font:inherit}button{cursor:pointer}
+.container{width:min(1160px,calc(100% - 36px));margin-inline:auto}
+.topbar{height:78px;position:sticky;top:0;z-index:30;background:rgba(8,19,46,.985);border-bottom:1px solid #ffffff18;color:#fff;backdrop-filter:blur(12px)}
+.top-inner{height:100%;display:flex;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand img{width:56px;height:56px;object-fit:contain;filter:drop-shadow(0 3px 6px #0006)}
+.brand-name{font:800 25px/.90 var(--font-display);letter-spacing:.01em}
+.brand-name small{display:block;margin-top:8px;color:#bac9ed;font:700 9px var(--font-body);letter-spacing:.15em}
+.desktop-nav{display:flex;align-items:center;justify-content:flex-end;gap:17px;flex:1}
+.desktop-nav a{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.045em;white-space:nowrap;color:#cbd5eb;transition:color .2s}
+.desktop-nav a:hover,.desktop-nav a[aria-current="page"]{color:#fff}
+.desktop-nav a[aria-current="page"]{border-bottom:2px solid var(--gold);padding-bottom:8px;margin-bottom:-10px}
+.menu-button{display:none;border:1px solid #ffffff50;border-radius:7px;background:#102654;color:#fff;padding:10px 14px;font-size:14px;font-weight:800}
+.mobile-nav{display:none;position:absolute;top:78px;left:0;right:0;padding:9px 18px 18px;background:#101f45;box-shadow:0 22px 40px #050b27aa}
+.mobile-nav a{display:block;padding:13px 8px;border-bottom:1px solid #ffffff16;font-size:13px;font-weight:800;text-transform:uppercase;color:#d2dfff}
+.mobile-nav a[aria-current="page"]{color:#fff;border-left:3px solid var(--gold);padding-left:12px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 86% 17%,#285bca 0%,#152f72 30%,#0b1d49 66%,#08132e 100%);color:#fff}
+.hero:after{content:"";position:absolute;right:-118px;top:-140px;width:470px;height:470px;border:2px solid #ffffff0f;border-radius:50%;box-shadow:0 0 0 60px #ffffff08,0 0 0 124px #ffffff05;pointer-events:none}
+.hero-inner{position:relative;z-index:1;padding:65px 0 69px}
+.kicker{font-size:11px;letter-spacing:.23em;font-weight:800;color:#a6c0ff;text-transform:uppercase}
+h1{font:900 clamp(58px,8vw,112px)/.82 var(--font-display);margin:19px 0 19px;letter-spacing:-.014em;text-transform:uppercase}
+h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1.8px #d1defb}
+.hero-text{max-width:690px;color:#d0dcf7;line-height:1.7;font-size:14px;margin:0}
+.hero-links{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:5px;padding:13px 17px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.075em;border:1px solid #ffffff47;color:#fff}
+.btn.active{background:var(--blue2);border-color:var(--blue2)}
+.btn:hover{background:#ffffff18}.btn.active:hover{background:#3663e9}
+.section{padding:42px 0 78px}
+.bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px;margin-bottom:22px}
+.bar h2{font:800 33px/.95 var(--font-display);text-transform:uppercase;margin:0;color:#14254a}
+.status{font-size:12px;color:#65718b;display:flex;align-items:center;gap:8px}
+.status:before{content:"";width:8px;height:8px;background:#34bb83;border-radius:50%;display:inline-block}
+.panel{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 16px 48px #1028540b}
+.footnote{color:#65718b;font-size:12px;line-height:1.8;margin-top:16px}
+.footnote a{color:#2452c7;font-weight:800}
+.site-footer{background:#08132e;color:#a5b5d8;padding:36px 0}
+.footer-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:12px;line-height:1.8}
+.footer-inner strong{color:#fff}
+.footer-inner a{color:#c9d7fb}
+.loading{padding:35px;text-align:center;color:#697590}
+@media(max-width:990px){.desktop-nav{gap:12px}.brand-name{font-size:22px}.desktop-nav a{font-size:10px}}
+@media(max-width:850px){.desktop-nav{display:none}.menu-button{display:block;margin-left:auto}.mobile-nav.open{display:block}.hero-inner{padding:48px 0 54px}}
+@media(max-width:560px){.topbar{height:69px}.mobile-nav{top:69px}.brand img{width:48px;height:48px}.brand-name{font-size:22px}h1{font-size:64px}.hero-text{font-size:13px}.section{padding:26px 0 54px}.bar h2{font-size:30px}.status{font-size:11px}}
+
+
+.controls{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:13px;margin-bottom:21px}
+.controls .choose{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.controls label{font-size:12px;font-weight:900;color:#4b5a79;text-transform:uppercase;letter-spacing:.08em}
+select{appearance:none;border:1px solid #b6c6eb;border-radius:7px;background:#fff;color:#123166;padding:12px 42px 12px 15px;font-size:14px;font-weight:800;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='%23295ce7' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-position:calc(100% - 13px) center;background-repeat:no-repeat}
+.arrows{display:flex;gap:7px}.arrows button{border-radius:7px;border:1px solid #c6d2e9;background:#fff;color:#153164;font-size:13px;font-weight:900;padding:12px 15px}.arrows button:hover{border-color:#3665e1}.arrows button:disabled{opacity:.4;cursor:default}
+.matchlist{display:grid;gap:13px}
+.match{background:#fff;border:1px solid var(--line);border-radius:10px;padding:21px 23px;box-shadow:0 11px 28px #10285409}
+.match.club{background:linear-gradient(100deg,#183c91,#245ad8);color:#fff;border:1px solid #4677fa;box-shadow:0 16px 36px #1b4ac333}
+.match-main{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center}
+.team{font:800 clamp(21px,2.9vw,28px)/1.03 var(--font-display);text-transform:uppercase;min-width:0}
+.team.away{text-align:right}
+.score{font:900 31px/.96 var(--font-display);color:#204bc0;white-space:nowrap;text-align:center;min-width:76px}
+.club .score{color:#fff}
+.details{margin-top:15px;padding-top:13px;border-top:1px solid #e7ecf5;color:#6a7791;font-size:11px;font-weight:700;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.club .details{border-color:#ffffff37;color:#dce6ff}
+.chip{font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;border-radius:20px;padding:5px 10px;background:#eaf0ff;color:#1e4bc8}
+.club .chip{background:#ffffff22;color:#fff}
+@media(max-width:570px){.match{padding:17px 14px}.score{min-width:55px;font-size:26px}.team{font-size:21px}.match-main{gap:6px}.controls{align-items:flex-start}.bar h2{font-size:29px}}
 </style>
 </head>
 <body>
-<main>
-<a href="./">← Početna stranica</a>
+<header class="topbar">
+  <div class="container top-inner">
+    <a class="brand" href="./" aria-label="OKK Novi Pazar - početna">
+      <img src="assets/logo.png" alt="Grb OKK Novi Pazar" width="56" height="56">
+      <span class="brand-name">OKK NOVI PAZAR<small>KOŠARKAŠKI KLUB · 1969</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Glavni meni"><a href="./">Početna</a><a href="./#utakmice">Utakmice</a><a href="tabela.html">Tabela</a><a href="rezultati.html" aria-current="page">Rezultati</a><a href="./#ekipa">Ekipa</a><a href="./#vesti">Vesti</a><a href="./#o-klubu">O klubu</a><a href="./#kontakt">Kontakt</a></nav>
+    <button class="menu-button" id="menu-button" type="button" aria-controls="mobile-nav" aria-expanded="false">☰ MENI</button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Meni za telefone"><a href="./">Početna</a><a href="./#utakmice">Utakmice</a><a href="tabela.html">Tabela</a><a href="rezultati.html" aria-current="page">Rezultati</a><a href="./#ekipa">Ekipa</a><a href="./#vesti">Vesti</a><a href="./#o-klubu">O klubu</a><a href="./#kontakt">Kontakt</a></nav>
+</header>
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="kicker">PRVA MUŠKA REGIONALNA LIGA ZAPAD · SEZONA 2026/27</div>
+    <h1>UTAKMICE <em>I REZULTATI.</em></h1>
+    <p class="hero-text">Prati rezultate svih 26 kola, izaberi rundu i pronađi narednu utakmicu OKK Novi Pazar.</p>
+    <div class="hero-links"><a class="btn" href="tabela.html">Tabela lige</a><a class="btn active" href="rezultati.html">Utakmice i rezultati</a></div>
+  </div>
+</section>
+<main class="section"><div class="container">
 
-<h1>UTAKMICE I REZULTATI</h1>
-<p class="subtitle">
-PRVA MUŠKA REGIONALNA LIGA ZAPAD · 2026/27
-</p>
+  <div class="bar"><h2>RASPORED I REZULTATI</h2><span class="status">Automatski podaci sa RKSCS</span></div>
+  <div class="controls">
+    <div class="choose"><label for="kolo">Izaberi kolo</label><select id="kolo" aria-label="Izaberi kolo"></select></div>
+    <div class="arrows"><button id="prev" type="button" aria-label="Prethodno kolo">← Prethodno</button><button id="next" type="button" aria-label="Sledeće kolo">Sledeće →</button></div>
+  </div>
+  <section id="utakmice" class="matchlist" aria-live="polite"><div class="panel loading">Učitavanje rezultata...</div></section>
+  <p class="footnote"><span id="azurirano">Čitanje podataka...</span> · Izvor: <a href="https://rkscs.rs/takmicenja?izvor=dscore&liga=283&tab=raspored" target="_blank" rel="noopener noreferrer">RKSCS</a>. Termini utakmica mogu se promeniti.</p>
 
-<div class="selector">
-  <select id="kolo" aria-label="Izaberi kolo"></select>
-</div>
-
-<div id="utakmice">Učitavanje rezultata...</div>
-<div class="footer" id="azurirano"></div>
-
-<p class="footer">
-Izvor:
-<a href="https://rkscs.rs/takmicenja?izvor=dscore&liga=283&tab=raspored">
-RKSCS
-</a>
-</p>
-</main>
-
+</div></main>
+<footer class="site-footer"><div class="container footer-inner">
+  <div><strong>OKK NOVI PAZAR</strong> · Plavo-bela porodica od 1969.<div>© <span id="year">2026</span> OKK Novi Pazar</div></div>
+  <div><a href="./">Početna</a> · <a href="tabela.html">Tabela</a> · <a href="rezultati.html">Rezultati</a><div>Podaci o takmičenju: <a href="https://rkscs.rs/takmicenja?izvor=dscore&liga=283&tab=tabela" target="_blank" rel="noopener noreferrer">RKSCS</a></div></div>
+</div></footer>
 <script>
-async function pokreni() {
-  const prikaz = document.getElementById("utakmice");
-  const izbor = document.getElementById("kolo");
+const btn=document.getElementById('menu-button');
+const mobile=document.getElementById('mobile-nav');
+btn.addEventListener('click',()=>{
+  const opened=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',String(!opened));
+  mobile.classList.toggle('open',!opened);
+});
+mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  mobile.classList.remove('open');
+  btn.setAttribute('aria-expanded','false');
+}));
+document.getElementById('year').textContent=new Date().getFullYear();
 
-  try {
-    const odgovor = await fetch(
-      "./data/rkscs_rezultati.json",
-      { cache: "no-store" }
-    );
 
-    if (!odgovor.ok) throw new Error("Nema podataka");
-
-    const podaci = await odgovor.json();
-    const utakmice = podaci.utakmice;
-
-    const kola = [...new Set(
-      utakmice.map(u => u.kolo)
-    )].sort((a, b) => a - b);
-
-    kola.forEach(broj => {
-      const opcija = document.createElement("option");
-      opcija.value = broj;
-      opcija.textContent = broj + ". KOLO";
-      izbor.appendChild(opcija);
-    });
-
-    function prikazi(broj) {
+async function pokreni(){
+  const prikaz=document.getElementById('utakmice');
+  const izbor=document.getElementById('kolo');
+  const prev=document.getElementById('prev');
+  const next=document.getElementById('next');
+  try{
+    const response=await fetch('./data/rkscs_rezultati.json',{cache:'no-store'});
+    if(!response.ok)throw new Error('Podaci nisu dostupni');
+    const data=await response.json();
+    const games=data.utakmice;
+    if(!Array.isArray(games)||!games.length)throw new Error('Prazan raspored');
+    const rounds=[...new Set(games.map(g=>Number(g.kolo)))].sort((a,b)=>a-b);
+    rounds.forEach(n=>{const option=document.createElement('option');option.value=n;option.textContent=n+'. KOLO';izbor.appendChild(option);});
+    function draw(n){
       prikaz.replaceChildren();
-
-      utakmice
-        .filter(u => u.kolo === Number(broj))
-        .forEach(u => {
-          const kartica = document.createElement("article");
-          kartica.className = "match";
-
-          if (
-            /novi pazar/i.test(u.domacin) ||
-            /novi pazar/i.test(u.gost)
-          ) {
-            kartica.classList.add("club");
-          }
-
-          const red = document.createElement("div");
-          red.className = "teams";
-
-          const domacin = document.createElement("span");
-          domacin.className = "team";
-          domacin.textContent = u.domacin;
-
-          const gost = document.createElement("span");
-          gost.className = "team away";
-          gost.textContent = u.gost;
-
-          const skor = document.createElement("span");
-          skor.className = "score";
-          skor.textContent = u.status === "zavrsena"
-            ? u.poeni_domacin + " : " + u.poeni_gost
-            : "VS";
-
-          red.append(domacin, skor, gost);
-
-          const detalji = document.createElement("div");
-          detalji.className = "details";
-          const datum = u.datum.split("-").reverse().join(".");
-          detalji.textContent = datum + " · " +
-            u.vreme + " · " +
-            (u.status === "zavrsena"
-              ? "Konačan rezultat"
-              : "Zakazana utakmica");
-
-          kartica.append(red, detalji);
-          prikaz.appendChild(kartica);
-        });
+      const selected=games.filter(g=>Number(g.kolo)===n).sort((a,b)=>String(a.datum+' '+a.vreme).localeCompare(String(b.datum+' '+b.vreme)));
+      for(const g of selected){
+        const club=/novi pazar/i.test(g.domacin)||/novi pazar/i.test(g.gost);
+        const article=document.createElement('article');article.className='match'+(club?' club':'');
+        const main=document.createElement('div');main.className='match-main';
+        const home=document.createElement('span');home.className='team';home.textContent=g.domacin;
+        const away=document.createElement('span');away.className='team away';away.textContent=g.gost;
+        const score=document.createElement('span');score.className='score';
+        const done=g.status==='zavrsena'&&g.poeni_domacin!=null&&g.poeni_gost!=null;
+        score.textContent=done?g.poeni_domacin+' : '+g.poeni_gost:'VS';
+        main.append(home,score,away);
+        const details=document.createElement('div');details.className='details';
+        const when=document.createElement('span');when.textContent=String(g.datum||'').split('-').reverse().join('.')+'. · '+(g.vreme||'Termin uskoro');
+        const chip=document.createElement('span');chip.className='chip';chip.textContent=done?'Konačan rezultat':'Zakazana utakmica';
+        details.append(when,chip);article.append(main,details);prikaz.appendChild(article);
+      }
+      prev.disabled=n<=rounds[0];next.disabled=n>=rounds[rounds.length-1];
     }
-
-    const sledeca = utakmice.find(
-      u => u.status !== "zavrsena"
-    );
-
-    izbor.value = sledeca
-      ? sledeca.kolo
-      : kola[kola.length - 1];
-
-    prikazi(izbor.value);
-
-    izbor.addEventListener("change", () => {
-      prikazi(izbor.value);
-    });
-
-    document.getElementById("azurirano").textContent =
-      "Poslednje ažuriranje: " +
-      new Date(podaci.azurirano).toLocaleString("sr-RS");
-
-  } catch (greska) {
-    prikaz.textContent =
-      "Rezultati trenutno nisu dostupni.";
+    const firstUpcoming=games.find(g=>g.status!=='zavrsena');
+    izbor.value=firstUpcoming?firstUpcoming.kolo:rounds[rounds.length-1];
+    draw(Number(izbor.value));
+    izbor.addEventListener('change',()=>draw(Number(izbor.value)));
+    prev.addEventListener('click',()=>{const i=rounds.indexOf(Number(izbor.value));if(i>0){izbor.value=rounds[i-1];draw(Number(izbor.value));}});
+    next.addEventListener('click',()=>{const i=rounds.indexOf(Number(izbor.value));if(i<rounds.length-1){izbor.value=rounds[i+1];draw(Number(izbor.value));}});
+    const updated=new Date(data.azurirano);
+    document.getElementById('azurirano').textContent=Number.isNaN(updated.getTime())?'Datum ažuriranja nije dostupan':'Poslednje ažuriranje: '+updated.toLocaleString('sr-RS',{timeZone:'Europe/Belgrade'});
+  }catch(err){
+    prikaz.replaceChildren();const p=document.createElement('div');p.className='panel loading';p.textContent='Rezultati trenutno nisu dostupni. Pokušajte ponovo kasnije.';prikaz.appendChild(p);
+    document.getElementById('azurirano').textContent='Osvežavanje nije uspelo';
   }
 }
-
 pokreni();
 </script>
 </body>
