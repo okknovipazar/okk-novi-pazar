@@ -140,3 +140,29 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline:3px solid #
 @media (prefers-reduced-motion:reduce) {
   .news-card,.player-card,.btn,.desktop-nav a::after { transition:none !important; }
 }
+
+/* Molten lopta na naslovnoj */
+.hero .ball-art {
+  display: none;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("molten-ball.png") no-repeat 72% center;
+  background-size: min(43vw, 530px);
+  opacity: .8;
+  z-index: 1;
+  pointer-events: none;
+  mask-image: none;
+}
+.topbar .brand-name span {
+  display: none;
+}
+@media (max-width: 760px) {
+  .hero::after {
+    background-position: 85% 23%;
+    background-size: 80vw;
+    opacity: .36;
+  }
+}
