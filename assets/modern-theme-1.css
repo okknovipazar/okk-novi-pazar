@@ -1,0 +1,65 @@
+/* OKK Novi Pazar — modernizacija v2, 31.10.2026.
+   Bez promena originalnih grbova, sadrzaja, JS funkcija i CMS-a.
+   Velika Molten lopta se ucitava iz assets/molten-ball.png. */
+:root{--navy:#061634;--deep:#071a40;--blue:#087af5;--blue2:#3588ff;--pale:#eef4fd;--ink:#101e3a;--muted:#61718f;--line:#dde7f5;--gold:#ffc85d}
+html{scroll-behavior:smooth}
+body{background:#edf3fb;color:#101e3a}
+.topbar{background:rgba(4,16,39,.97);border-bottom:1px solid #3c83df55;box-shadow:0 8px 25px #03122955;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.top-inner{gap:16px}
+.brand-badge{height:62px;width:62px}.club-logo{filter:drop-shadow(0 4px 10px #0007)}
+.brand-name{font-size:clamp(22px,2.1vw,29px);line-height:1;letter-spacing:.025em}
+.brand-name span{display:none} /* Samo OKK Novi Pazar, bez 1969 */
+.desktop-nav{gap:18px}.desktop-nav a{color:#dce8ff;border-radius:5px;padding:7px 0}.desktop-nav a:hover{color:#fff}
+.nav-cta{border-radius:10px}.menu-toggle{border-radius:12px;background:#ffffff0d;min-height:45px;min-width:46px}
+.mobile-nav{background:#071c43;border-top:1px solid #ffffff18;box-shadow:0 18px 35px #03112d99}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ffc85d;outline-offset:3px}
+
+/* Moderna hero pozadina + originalni grb gore levo */
+.hero{min-height:580px;background:radial-gradient(circle at 63% 48%,#134d9d 0%,#092c68 30%,#061b42 64%,#030f29 100%);border-bottom:1px solid #ffffff20}
+.hero::before{background:linear-gradient(90deg,#04132de8 0%,#061b3f9c 43%,#04133060 100%)}
+.hero::after{opacity:.22}
+.court-lines{right:-3%;opacity:.18}
+/* SVG ostaje u HTML-u zbog kompatibilnosti, ali ga vizuelno zamenjujemo */
+.hero .ball-art{opacity:0!important;pointer-events:none}
+.hero::selection{background:#7baefa}
+.hero-grid{min-height:580px;grid-template-columns:1.05fr .95fr;gap:40px;padding:34px 0 46px;isolation:isolate}
+.hero-grid::before{content:"";position:absolute;z-index:-1;pointer-events:none;width:min(44vw,590px);height:min(44vw,590px);left:35%;top:3%;background:url('molten-ball.png') center/contain no-repeat;filter:drop-shadow(0 20px 36px #010818b5);opacity:.77;transform:rotate(-11deg)}
+.hero-copy{padding:42px 0 45px}
+.hero-kicker{color:#b8d2ff;font-size:11px;letter-spacing:.15em}.hero-kicker::before{background:#ffc85d;height:3px}
+.hero h1{font-size:clamp(82px,8.2vw,126px);line-height:.82;margin:29px 0 22px;letter-spacing:-.03em;text-shadow:0 8px 36px #0007}
+.hero h1 .light{color:#2b95ff;-webkit-text-stroke:0;text-shadow:0 6px 22px #00182e88}
+.hero-p{color:#e2edff;font-size:15px;line-height:1.65;max-width:435px;margin:23px 0}
+.hero-actions{gap:10px}.btn{border-radius:11px;min-height:48px;padding:15px 20px;box-shadow:0 5px 20px #030e253d;transition:transform .18s,box-shadow .18s}.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(115deg,#308eff,#0866eb);color:#fff;box-shadow:0 10px 26px #046de34d}.btn-outline{background:#07193990;border:1px solid #accbff9c}
+.hero-vertical{color:#d4e5ff88}
+
+/* Sledeca utakmica: tamna sportska kartica sa stvarnim grbovima i aktivnim tajmerom */
+.match-card{align-self:center;justify-self:end;width:min(455px,100%);margin:0;background:linear-gradient(145deg,#091f4deb,#051533f5);border:1px solid #3987edac;border-radius:18px;color:#fff;box-shadow:0 28px 70px #0007;backdrop-filter:blur(14px)}
+.match-card-top{background:#1b4b97bb;color:#fff;padding:14px 20px;border-bottom:1px solid #4681dd55;letter-spacing:.12em}
+.match-card-body{padding:27px 25px 23px}.match-label{color:#bbcff5}.teams{gap:12px;margin:23px 0}.team-name{color:#fff;font-size:23px}.team-logo{width:79px;height:79px;border:1px solid #6e9fe574;box-shadow:0 8px 25px #0006;background:#f0f5ff!important;color:#163e88!important}.vs{color:#d8e8ff;font-size:32px}
+.match-details{border-top:1px solid #85acdf49}.match-details .date{color:#fff}.match-details .place{color:#c6d9f4}
+.countdown{background:linear-gradient(95deg,#082b66,#0f56b4);border-top:1px solid #5daaff4f;color:#fff}
+.match-card > a[href*="uzivo.html"]{background:linear-gradient(100deg,#187af9,#0650cc)!important;color:#fff!important;border-radius:0 0 17px 17px}
+
+/* Moderne svetle kartice, postojece vesti i rezultati ostaju dinamicni */
+.ticker{background:#0a56b6}.stats-band{background:#fff;border-bottom:1px solid #d7e2f1}
+.stats-grid .stat strong{color:#116de6}.stats-grid .stat:hover{background:#f3f7ff}
+.section{padding:72px 0}.section-head{border-bottom:1px solid #dbe5f3;padding-bottom:19px;margin-bottom:25px}.section-heading{letter-spacing:-.025em}.section-desc{color:#61718d}
+.result-panel{border-radius:17px;box-shadow:0 16px 32px #0a2b5718}.result-panel.dark{background:linear-gradient(130deg,#071b44,#104aa1)}.result-panel.white{background:#fff;border:1px solid #dbe7f6}
+.match-row{border-radius:10px;transition:background .15s}.match-row:hover{background:#eaf2ff}
+.news-section{background:#eaf1fa}.news-card{border-radius:17px;background:#fff;border:1px solid #dbe6f5;box-shadow:0 9px 26px #163c7613;overflow:hidden;transition:transform .2s,box-shadow .2s}.news-card:hover{transform:translateY(-3px);box-shadow:0 14px 33px #143d7425}.news-content{padding:21px}.news-read{color:#0069ed}
+.squad-section{background:linear-gradient(145deg,#04122c,#0a265b)}.player-card{border-radius:15px}.coach-panel{border-radius:14px}.search-field{border-radius:10px}
+.history-photo{border-radius:17px}.partner-section{background:linear-gradient(110deg,#0b3b90,#166ad5)}.partner-inner .btn{box-shadow:0 8px 24px #071a5360}.footer{background:#04132c}
+
+@media(max-width:1040px){.desktop-nav{gap:11px}.desktop-nav a{font-size:10px}.brand-name{font-size:23px}.hero-grid{gap:16px}.hero-grid::before{left:29%;opacity:.56}.hero h1{font-size:clamp(75px,9.4vw,110px)}}
+@media(max-width:760px){
+ .topbar{height:73px}.brand-badge{width:51px;height:51px}.brand-name{font-size:23px}
+ .hero{min-height:0}.hero-grid{display:flex;flex-direction:column;min-height:0;padding:0 0 37px;gap:0}
+ .hero-grid::before{width:78vw;height:78vw;left:24%;top:59px;opacity:.37;transform:rotate(-11deg)}
+ .hero-copy{padding:65px 0 36px;position:relative;z-index:1}.hero-kicker{max-width:320px;line-height:1.7}
+ .hero h1{font-size:clamp(72px,16vw,120px);line-height:.88;margin:30px 0 25px}.hero-p{font-size:13px;max-width:330px;line-height:1.65}.hero-actions .btn{min-height:49px}
+ .match-card{width:100%;align-self:center;border-radius:16px;margin:0}.team-logo{width:66px;height:66px}.team-name{font-size:20px}.match-card-body{padding:24px 17px 19px}
+ .section{padding:57px 0}.section-head{margin-bottom:19px}.news-card{border-radius:13px}.roster-grid{gap:10px}
+}
+@media(max-width:380px){.brand-name{font-size:20px}.hero h1{font-size:clamp(67px,18vw,81px)}.hero-grid::before{top:100px;opacity:.28}.hero-actions .btn{padding:14px}.match-card-body{padding:20px 12px 18px}.team-logo{width:57px;height:57px}}
+@media(prefers-reduced-motion:reduce){.btn,.news-card,.player-card{transition:none!important}}
