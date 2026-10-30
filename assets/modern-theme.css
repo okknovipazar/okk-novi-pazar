@@ -1,0 +1,142 @@
+/* OKK NOVI PAZAR | Vizuelno osvezenje 2026
+   Samo CSS: bez izmena funkcija, podataka i JavaScript-a. */
+:root {
+  --navy:#07132f;
+  --deep:#091d45;
+  --blue:#2257dd;
+  --blue2:#4f82ff;
+  --pale:#f3f6fc;
+  --ink:#132445;
+  --muted:#697a98;
+  --line:#e0e8f4;
+  --gold:#f6c563;
+}
+body { background:var(--pale); }
+a, button { -webkit-tap-highlight-color:transparent; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline:3px solid #f6c563; outline-offset:3px; }
+::selection { background:#bfd4ff; color:#06132e; }
+
+/* Navigacija: moderniji tamni stakleni header */
+.topbar {
+  background:rgba(6,17,41,.94);
+  border-bottom:1px solid rgba(161,192,255,.15);
+  box-shadow:0 8px 30px rgba(4,12,35,.12);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+.desktop-nav a { position:relative; color:#cfddf8; }
+.desktop-nav a::after {
+  content:""; position:absolute; left:0; right:100%; bottom:-9px; height:2px;
+  background:var(--gold); transition:right .2s ease;
+}
+.desktop-nav a:hover::after { right:0; }
+.nav-cta, .btn, .menu-toggle { border-radius:10px; }
+.nav-cta { box-shadow:0 8px 20px #040d2940; }
+.menu-toggle { background:#ffffff11; }
+.mobile-nav { box-shadow:0 20px 42px #02091e88; }
+
+/* Uvodna sekcija: malo vise premium, ali ostaje postojeci grb/teren */
+.hero {
+  background:
+    radial-gradient(ellipse at 85% 19%,rgba(69,123,255,.40),transparent 46%),
+    radial-gradient(ellipse at 16% 87%,rgba(19,81,184,.28),transparent 48%),
+    linear-gradient(125deg,#061027 0%,#0b2050 54%,#102e6e 100%);
+}
+.hero::before { background:linear-gradient(90deg,#07142bec 0%,#0b1d42ac 42%,transparent 91%); }
+.hero-kicker { color:#b7cdfa; }
+.hero-kicker::before { background:#f6c563; height:3px; border-radius:3px; }
+.hero h1 { letter-spacing:-.035em; text-shadow:0 13px 35px #010a2666; }
+.hero h1 .light { -webkit-text-stroke:1.7px #dce8ff; }
+.hero-p { color:#d4e1fc; }
+.hero-actions { gap:12px; }
+.btn { min-height:48px; transition:transform .18s,box-shadow .18s,background .18s; }
+.btn-primary {
+  background:linear-gradient(135deg,#3976ff,#2054db);
+  box-shadow:0 12px 30px #0d3ead61;
+}
+.btn-primary:hover { box-shadow:0 17px 37px #0d3ead78; }
+.btn-outline { border-color:#d9e6ff65; background:#ffffff08; }
+
+/* Karta sledece utakmice: ne menjamo podatke ni tajmer */
+.match-card {
+  border:1px solid #ffffffb8;
+  border-radius:18px;
+  background:#fffffff5;
+  box-shadow:0 32px 75px #030b275e,0 3px 12px #06183d26;
+}
+.match-card-top { background:linear-gradient(100deg,#ffd981,#edb44a); color:#253451; }
+.match-card-body { padding:29px 27px 24px; }
+.team-logo { border:1px solid #d9e4f8; box-shadow:0 7px 20px #112d6414; }
+.team-name { color:#152b59; }
+.match-details { border-top-color:#e2e9f5; }
+.countdown { background:linear-gradient(105deg,#0a1b42,#16439a); }
+.match-card > a[href*="uzivo.html"] {
+  background:linear-gradient(105deg,#2f69eb,#1d4cc6) !important;
+  transition:filter .18s ease;
+}
+.match-card > a[href*="uzivo.html"]:hover { filter:brightness(1.1); }
+
+/* Brojevi / statistika */
+.stats-band { background:#fff; }
+.stats-grid .stat { transition:background .2s ease; }
+.stats-grid .stat:hover { background:#f3f7ff; }
+
+/* Sekcije, rezultat, vesti, igraci */
+.section { scroll-margin-top:85px; }
+.section-heading { letter-spacing:-.024em; }
+.section-head { border-bottom:1px solid #dfe7f3; padding-bottom:22px; }
+.arrow-link { color:#2558d7; }
+.result-panel { border-radius:16px; box-shadow:0 14px 38px #09265a12; }
+.result-panel.dark { background:linear-gradient(140deg,#071a45,#164399); }
+.result-panel.white { border:1px solid #e1e9f5; }
+.match-row { transition:background .18s; }
+.match-row:hover { background:#f0f5ff; }
+.squad-section {
+  background:linear-gradient(135deg,#07142e 0%,#0b1f47 55%,#102a5a 100%);
+}
+.player-card { border-radius:16px; }
+.player-card:hover { transform:translateY(-5px); }
+.player-photo-wrap { background:linear-gradient(180deg,#edf3ff,#dce7fb); }
+.coach-panel { border-radius:15px; }
+.search-field { border-radius:10px; }
+.news-section { background:linear-gradient(180deg,#f3f6fc,#eef3fa); }
+.news-card {
+  border-radius:16px;
+  box-shadow:0 12px 27px #0a245909;
+  transition:transform .18s,box-shadow .18s,border-color .18s;
+}
+.news-card:hover {
+  border-color:#bfd0f4;
+  box-shadow:0 22px 44px #102a6421;
+}
+.news-art { overflow:hidden; }
+.news-read { color:#2458d8; }
+.history-photo { border-radius:18px; box-shadow:0 18px 42px #091b441c; }
+.partner-section { background:linear-gradient(110deg,#15378c,#2658cb); }
+.partner-inner .btn { box-shadow:0 8px 25px #071f6252; }
+.footer { background:#06122b; }
+.footer-links a { transition:color .16s; }
+.footer-links a:hover { color:#fff; }
+
+/* Mobilni ekrani: citljiviji naslov i dugmad na dodir */
+@media (max-width:760px) {
+  .topbar { background:rgba(6,17,41,.97); }
+  .hero-copy { padding-top:67px; }
+  .hero h1 { font-size:clamp(72px,16vw,124px); line-height:.86; }
+  .hero-p { line-height:1.75; }
+  .hero-actions .btn { min-height:46px; }
+  .match-card { border-radius:16px; }
+  .section { padding-top:62px; padding-bottom:65px; }
+  .section-head { padding-bottom:16px; }
+  .news-card { border-radius:14px; }
+  .player-card { border-radius:13px; }
+  .stats-grid .stat:hover { background:transparent; }
+}
+@media (max-width:380px) {
+  .hero h1 { font-size:clamp(70px,19.5vw,81px); }
+  .match-card-body { padding:23px 16px 19px; }
+  .hero-actions .btn { padding-inline:13px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .news-card,.player-card,.btn,.desktop-nav a::after { transition:none !important; }
+}
