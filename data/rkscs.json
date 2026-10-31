@@ -4,6 +4,16 @@
   "tabela": [
     {
       "pozicija": 1,
+      "tim": "Svilajnac",
+      "odigrano": 4,
+      "pobede": 4,
+      "porazi": 0,
+      "kosevi": "295 : 264",
+      "razlika": 31,
+      "bodovi": 8
+    },
+    {
+      "pozicija": 2,
       "tim": "Železničar",
       "odigrano": 3,
       "pobede": 3,
@@ -13,23 +23,13 @@
       "bodovi": 6
     },
     {
-      "pozicija": 2,
+      "pozicija": 3,
       "tim": "Šabac",
       "odigrano": 3,
       "pobede": 3,
       "porazi": 0,
       "kosevi": "259 : 213",
       "razlika": 46,
-      "bodovi": 6
-    },
-    {
-      "pozicija": 3,
-      "tim": "Svilajnac",
-      "odigrano": 3,
-      "pobede": 3,
-      "porazi": 0,
-      "kosevi": "220 : 192",
-      "razlika": 28,
       "bodovi": 6
     },
     {
@@ -104,6 +104,16 @@
     },
     {
       "pozicija": 11,
+      "tim": "Plana",
+      "odigrano": 4,
+      "pobede": 0,
+      "porazi": 4,
+      "kosevi": "275 : 305",
+      "razlika": -30,
+      "bodovi": 4
+    },
+    {
+      "pozicija": 12,
       "tim": "Zekas 75",
       "odigrano": 3,
       "pobede": 0,
@@ -113,23 +123,13 @@
       "bodovi": 3
     },
     {
-      "pozicija": 12,
+      "pozicija": 13,
       "tim": "Polet",
       "odigrano": 3,
       "pobede": 0,
       "porazi": 3,
       "kosevi": "231 : 257",
       "razlika": -26,
-      "bodovi": 3
-    },
-    {
-      "pozicija": 13,
-      "tim": "Plana",
-      "odigrano": 3,
-      "pobede": 0,
-      "porazi": 3,
-      "kosevi": "203 : 230",
-      "razlika": -27,
       "bodovi": 3
     },
     {
@@ -143,5 +143,5 @@
       "bodovi": 3
     }
   ],
-  "azurirano": "2026-10-29T11:16:00.197409+00:00"
+  "azurirano": "2026-10-31T20:39:55.315896+00:00"
 }
