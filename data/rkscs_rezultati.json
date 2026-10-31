@@ -228,9 +228,9 @@
       "vreme": "19:30",
       "domacin": "Prva Petoletka",
       "gost": "Zekas 75",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 104,
+      "poeni_gost": 106,
+      "status": "zavrsena"
     },
     {
       "kolo": 4,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-10-31T20:05:45.622544+00:00"
+  "azurirano": "2026-10-31T21:08:02.355877+00:00"
 }
