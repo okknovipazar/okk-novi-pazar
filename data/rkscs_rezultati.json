@@ -218,9 +218,9 @@
       "vreme": "19:00",
       "domacin": "Plana",
       "gost": "Svilajnac",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 72,
+      "poeni_gost": 75,
+      "status": "zavrsena"
     },
     {
       "kolo": 4,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-10-29T11:39:48.343181+00:00"
+  "azurirano": "2026-10-31T20:05:45.622544+00:00"
 }
