@@ -4,6 +4,16 @@
   "tabela": [
     {
       "pozicija": 1,
+      "tim": "Železničar",
+      "odigrano": 4,
+      "pobede": 4,
+      "porazi": 0,
+      "kosevi": "378 : 300",
+      "razlika": 78,
+      "bodovi": 8
+    },
+    {
+      "pozicija": 2,
       "tim": "Šabac",
       "odigrano": 4,
       "pobede": 4,
@@ -13,7 +23,7 @@
       "bodovi": 8
     },
     {
-      "pozicija": 2,
+      "pozicija": 3,
       "tim": "Svilajnac",
       "odigrano": 4,
       "pobede": 4,
@@ -21,16 +31,6 @@
       "kosevi": "295 : 264",
       "razlika": 31,
       "bodovi": 8
-    },
-    {
-      "pozicija": 3,
-      "tim": "Železničar",
-      "odigrano": 3,
-      "pobede": 3,
-      "porazi": 0,
-      "kosevi": "288 : 228",
-      "razlika": 60,
-      "bodovi": 6
     },
     {
       "pozicija": 4,
@@ -105,12 +105,12 @@
     {
       "pozicija": 11,
       "tim": "Babajić",
-      "odigrano": 3,
+      "odigrano": 4,
       "pobede": 1,
-      "porazi": 2,
-      "kosevi": "169 : 215",
-      "razlika": -46,
-      "bodovi": 4
+      "porazi": 3,
+      "kosevi": "241 : 305",
+      "razlika": -64,
+      "bodovi": 5
     },
     {
       "pozicija": 12,
@@ -143,5 +143,5 @@
       "bodovi": 4
     }
   ],
-  "azurirano": "2026-11-01T15:40:02.278764+00:00"
+  "azurirano": "2026-11-01T16:42:22.271556+00:00"
 }
