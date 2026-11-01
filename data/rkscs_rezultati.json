@@ -284,18 +284,28 @@
     },
     {
       "kolo": 5,
-      "datum": "2026-11-07",
-      "vreme": "00:00",
-      "domacin": "Šabac",
-      "gost": "Prva Petoletka",
+      "datum": "2026-11-06",
+      "vreme": "18:30",
+      "domacin": "Železničar",
+      "gost": "Plana",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
     },
     {
       "kolo": 5,
-      "datum": "2026-11-07",
-      "vreme": "00:00",
+      "datum": "2026-11-06",
+      "vreme": "19:30",
+      "domacin": "Zekas 75",
+      "gost": "Napredak Junior",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 5,
+      "datum": "2026-11-06",
+      "vreme": "21:00",
       "domacin": "Požarevac",
       "gost": "Polet",
       "poeni_domacin": null,
@@ -305,37 +315,7 @@
     {
       "kolo": 5,
       "datum": "2026-11-07",
-      "vreme": "00:00",
-      "domacin": "Paraćin",
-      "gost": "Novi Pazar",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 5,
-      "datum": "2026-11-07",
-      "vreme": "00:00",
-      "domacin": "Svilajnac",
-      "gost": "Miks",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 5,
-      "datum": "2026-11-07",
-      "vreme": "00:00",
-      "domacin": "Železničar",
-      "gost": "Plana",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 5,
-      "datum": "2026-11-07",
-      "vreme": "00:00",
+      "vreme": "16:00",
       "domacin": "Smederevo 1953",
       "gost": "Babajić",
       "poeni_domacin": null,
@@ -345,9 +325,29 @@
     {
       "kolo": 5,
       "datum": "2026-11-07",
-      "vreme": "00:00",
-      "domacin": "Zekas 75",
-      "gost": "Napredak Junior",
+      "vreme": "18:00",
+      "domacin": "Paraćin",
+      "gost": "Novi Pazar",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 5,
+      "datum": "2026-11-07",
+      "vreme": "19:00",
+      "domacin": "Šabac",
+      "gost": "Prva Petoletka",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 5,
+      "datum": "2026-11-07",
+      "vreme": "19:00",
+      "domacin": "Svilajnac",
+      "gost": "Miks",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-01T19:17:34.694444+00:00"
+  "azurirano": "2026-11-01T22:08:31.940687+00:00"
 }
