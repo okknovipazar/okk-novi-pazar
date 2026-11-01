@@ -238,9 +238,9 @@
       "vreme": "13:30",
       "domacin": "Polet",
       "gost": "Šabac",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 85,
+      "poeni_gost": 88,
+      "status": "zavrsena"
     },
     {
       "kolo": 4,
@@ -248,9 +248,9 @@
       "vreme": "14:00",
       "domacin": "Napredak Junior",
       "gost": "Smederevo 1953",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 61,
+      "poeni_gost": 77,
+      "status": "zavrsena"
     },
     {
       "kolo": 4,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-10-31T21:08:02.355877+00:00"
+  "azurirano": "2026-11-01T15:09:13.667916+00:00"
 }
