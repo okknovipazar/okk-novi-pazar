@@ -268,9 +268,9 @@
       "vreme": "18:00",
       "domacin": "Miks",
       "gost": "Paraćin",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 80,
+      "poeni_gost": 77,
+      "status": "zavrsena"
     },
     {
       "kolo": 4,
@@ -278,9 +278,9 @@
       "vreme": "18:00",
       "domacin": "Novi Pazar",
       "gost": "Požarevac",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 79,
+      "poeni_gost": 84,
+      "status": "zavrsena"
     },
     {
       "kolo": 5,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-01T17:09:44.247150+00:00"
+  "azurirano": "2026-11-01T19:17:34.694444+00:00"
 }
