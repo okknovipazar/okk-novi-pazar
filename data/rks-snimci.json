@@ -3,6 +3,16 @@
   "channel_name": "RKS Centralna Srbija",
   "videos": [
     {
+      "id": "HkVwmFPgI-0",
+      "title": "4. kolo OKK \"Novi Pazar\" - KK \"Požarevac\" 79:84",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T12:33:36Z",
+      "duration_seconds": 10204,
+      "youtube_url": "https://www.youtube.com/watch?v=HkVwmFPgI-0",
+      "thumbnail_url": "https://i.ytimg.com/vi/HkVwmFPgI-0/hqdefault.jpg",
+      "source": "RKS Centralna Srbija"
+    },
+    {
       "id": "qxBCLtIChMo",
       "title": "2. Kolo OKK \"Novi Pazar\" - KK \"Polet\" 97:80",
       "date": "2026-10-22",
@@ -103,5 +113,5 @@
       "source": "RKS Centralna Srbija"
     }
   ],
-  "updated_at": "2026-10-30T12:13:47.176411+00:00"
+  "updated_at": "2026-11-02T17:08:20.689276+00:00"
 }
