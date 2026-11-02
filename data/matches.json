@@ -35,5 +35,16 @@
     "home_score": 79,
     "away_score": 84,
     "note": "DERBI KOLA"
+  },
+  {
+    "round": "5 Kolo",
+    "date": "2026-11-07",
+    "time": "18:00",
+    "home": "KK PARAĆIN",
+    "away": "OKK NOVI PAZAR",
+    "home_logo": "/media/233847.png",
+    "away_logo": "/media/224632.png",
+    "venue": "Hala „7. jul“, Paraćin",
+    "status": "zakazana"
   }
 ]
