@@ -288,9 +288,9 @@
       "vreme": "18:30",
       "domacin": "Železničar",
       "gost": "Plana",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 104,
+      "poeni_gost": 81,
+      "status": "zavrsena"
     },
     {
       "kolo": 5,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-06T18:19:21.386005+00:00"
+  "azurirano": "2026-11-06T19:29:26.553859+00:00"
 }
