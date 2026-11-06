@@ -298,9 +298,9 @@
       "vreme": "19:30",
       "domacin": "Zekas 75",
       "gost": "Napredak Junior",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 82,
+      "poeni_gost": 53,
+      "status": "zavrsena"
     },
     {
       "kolo": 5,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-06T19:29:26.553859+00:00"
+  "azurirano": "2026-11-06T20:20:05.065692+00:00"
 }
