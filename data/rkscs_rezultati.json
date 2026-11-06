@@ -308,9 +308,9 @@
       "vreme": "20:00",
       "domacin": "Požarevac",
       "gost": "Polet",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 81,
+      "poeni_gost": 67,
+      "status": "zavrsena"
     },
     {
       "kolo": 5,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-06T20:20:05.065692+00:00"
+  "azurirano": "2026-11-06T21:15:34.535162+00:00"
 }
