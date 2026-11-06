@@ -354,8 +354,8 @@
     },
     {
       "kolo": 6,
-      "datum": "2026-11-14",
-      "vreme": "00:00",
+      "datum": "2026-11-13",
+      "vreme": "19:00",
       "domacin": "Prva Petoletka",
       "gost": "Napredak Junior",
       "poeni_domacin": null,
@@ -365,27 +365,7 @@
     {
       "kolo": 6,
       "datum": "2026-11-14",
-      "vreme": "00:00",
-      "domacin": "Babajić",
-      "gost": "Zekas 75",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 6,
-      "datum": "2026-11-14",
-      "vreme": "00:00",
-      "domacin": "Plana",
-      "gost": "Smederevo 1953",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 6,
-      "datum": "2026-11-14",
-      "vreme": "00:00",
+      "vreme": "16:30",
       "domacin": "Miks",
       "gost": "Železničar",
       "poeni_domacin": null,
@@ -395,9 +375,9 @@
     {
       "kolo": 6,
       "datum": "2026-11-14",
-      "vreme": "00:00",
-      "domacin": "Novi Pazar",
-      "gost": "Svilajnac",
+      "vreme": "19:00",
+      "domacin": "Plana",
+      "gost": "Smederevo 1953",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
@@ -405,7 +385,27 @@
     {
       "kolo": 6,
       "datum": "2026-11-14",
-      "vreme": "00:00",
+      "vreme": "19:00",
+      "domacin": "Šabac",
+      "gost": "Požarevac",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 6,
+      "datum": "2026-11-15",
+      "vreme": "16:00",
+      "domacin": "Babajić",
+      "gost": "Zekas 75",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 6,
+      "datum": "2026-11-15",
+      "vreme": "18:00",
       "domacin": "Polet",
       "gost": "Paraćin",
       "poeni_domacin": null,
@@ -414,10 +414,10 @@
     },
     {
       "kolo": 6,
-      "datum": "2026-11-14",
-      "vreme": "00:00",
-      "domacin": "Šabac",
-      "gost": "Požarevac",
+      "datum": "2026-11-15",
+      "vreme": "19:00",
+      "domacin": "Novi Pazar",
+      "gost": "Svilajnac",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-02T12:27:01.227606+00:00"
+  "azurirano": "2026-11-06T18:19:21.386005+00:00"
 }
