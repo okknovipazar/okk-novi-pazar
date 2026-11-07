@@ -35,15 +35,25 @@
     {
       "pozicija": 4,
       "tim": "Šabac",
-      "odigrano": 4,
+      "odigrano": 5,
       "pobede": 4,
-      "porazi": 0,
-      "kosevi": "347 : 298",
-      "razlika": 49,
-      "bodovi": 8
+      "porazi": 1,
+      "kosevi": "438 : 390",
+      "razlika": 48,
+      "bodovi": 9
     },
     {
       "pozicija": 5,
+      "tim": "Prva Petoletka",
+      "odigrano": 5,
+      "pobede": 3,
+      "porazi": 2,
+      "kosevi": "421 : 410",
+      "razlika": 11,
+      "bodovi": 8
+    },
+    {
+      "pozicija": 6,
       "tim": "Novi Pazar",
       "odigrano": 5,
       "pobede": 3,
@@ -53,7 +63,7 @@
       "bodovi": 8
     },
     {
-      "pozicija": 6,
+      "pozicija": 7,
       "tim": "Smederevo 1953",
       "odigrano": 5,
       "pobede": 3,
@@ -63,7 +73,7 @@
       "bodovi": 8
     },
     {
-      "pozicija": 7,
+      "pozicija": 8,
       "tim": "Miks",
       "odigrano": 5,
       "pobede": 3,
@@ -73,7 +83,7 @@
       "bodovi": 8
     },
     {
-      "pozicija": 8,
+      "pozicija": 9,
       "tim": "Zekas 75",
       "odigrano": 5,
       "pobede": 2,
@@ -83,7 +93,7 @@
       "bodovi": 7
     },
     {
-      "pozicija": 9,
+      "pozicija": 10,
       "tim": "Paraćin",
       "odigrano": 5,
       "pobede": 2,
@@ -91,16 +101,6 @@
       "kosevi": "384 : 377",
       "razlika": 7,
       "bodovi": 7
-    },
-    {
-      "pozicija": 10,
-      "tim": "Prva Petoletka",
-      "odigrano": 4,
-      "pobede": 2,
-      "porazi": 2,
-      "kosevi": "329 : 319",
-      "razlika": 10,
-      "bodovi": 6
     },
     {
       "pozicija": 11,
@@ -143,5 +143,5 @@
       "bodovi": 5
     }
   ],
-  "azurirano": "2026-11-07T20:42:20.926347+00:00"
+  "azurirano": "2026-11-07T21:41:44.954058+00:00"
 }
