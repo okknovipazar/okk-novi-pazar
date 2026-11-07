@@ -14,6 +14,16 @@
     },
     {
       "pozicija": 2,
+      "tim": "Svilajnac",
+      "odigrano": 5,
+      "pobede": 5,
+      "porazi": 0,
+      "kosevi": "374 : 338",
+      "razlika": 36,
+      "bodovi": 10
+    },
+    {
+      "pozicija": 3,
       "tim": "Požarevac",
       "odigrano": 5,
       "pobede": 4,
@@ -23,23 +33,13 @@
       "bodovi": 9
     },
     {
-      "pozicija": 3,
+      "pozicija": 4,
       "tim": "Šabac",
       "odigrano": 4,
       "pobede": 4,
       "porazi": 0,
       "kosevi": "347 : 298",
       "razlika": 49,
-      "bodovi": 8
-    },
-    {
-      "pozicija": 4,
-      "tim": "Svilajnac",
-      "odigrano": 4,
-      "pobede": 4,
-      "porazi": 0,
-      "kosevi": "295 : 264",
-      "razlika": 31,
       "bodovi": 8
     },
     {
@@ -65,12 +65,12 @@
     {
       "pozicija": 7,
       "tim": "Miks",
-      "odigrano": 4,
+      "odigrano": 5,
       "pobede": 3,
-      "porazi": 1,
-      "kosevi": "312 : 318",
-      "razlika": -6,
-      "bodovi": 7
+      "porazi": 2,
+      "kosevi": "386 : 397",
+      "razlika": -11,
+      "bodovi": 8
     },
     {
       "pozicija": 8,
@@ -143,5 +143,5 @@
       "bodovi": 5
     }
   ],
-  "azurirano": "2026-11-07T19:45:38.070852+00:00"
+  "azurirano": "2026-11-07T20:42:20.926347+00:00"
 }
