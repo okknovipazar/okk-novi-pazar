@@ -318,9 +318,9 @@
       "vreme": "16:00",
       "domacin": "Smederevo 1953",
       "gost": "Babajić",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 86,
+      "poeni_gost": 64,
+      "status": "zavrsena"
     },
     {
       "kolo": 5,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-06T21:15:34.535162+00:00"
+  "azurirano": "2026-11-07T17:11:34.401498+00:00"
 }
