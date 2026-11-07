@@ -348,9 +348,9 @@
       "vreme": "19:00",
       "domacin": "Svilajnac",
       "gost": "Miks",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 79,
+      "poeni_gost": 74,
+      "status": "zavrsena"
     },
     {
       "kolo": 6,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-07T19:19:56.635823+00:00"
+  "azurirano": "2026-11-07T20:09:49.422312+00:00"
 }
