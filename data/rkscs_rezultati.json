@@ -328,9 +328,9 @@
       "vreme": "18:00",
       "domacin": "Paraćin",
       "gost": "Novi Pazar",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 85,
+      "poeni_gost": 88,
+      "status": "zavrsena"
     },
     {
       "kolo": 5,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-07T17:11:34.401498+00:00"
+  "azurirano": "2026-11-07T19:19:56.635823+00:00"
 }
