@@ -338,9 +338,9 @@
       "vreme": "19:00",
       "domacin": "Šabac",
       "gost": "Prva Petoletka",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 91,
+      "poeni_gost": 92,
+      "status": "zavrsena"
     },
     {
       "kolo": 5,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-07T20:09:49.422312+00:00"
+  "azurirano": "2026-11-07T21:11:58.889029+00:00"
 }
