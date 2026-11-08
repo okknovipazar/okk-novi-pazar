@@ -46,5 +46,15 @@
     "away_logo": "/media/224632.png",
     "venue": "Hala „7. jul“, Paraćin",
     "status": "zakazana"
+  },
+  {
+    "round": "6. KOLO",
+    "date": "2026-11-15",
+    "time": "19:00",
+    "home": "OKK NOVI PAZAR",
+    "away": "KK SVILAJNAC",
+    "away_logo": "/media/images.jpg",
+    "venue": "DOGUŠ",
+    "status": "zakazana"
   }
 ]
