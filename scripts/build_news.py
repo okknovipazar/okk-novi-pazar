@@ -5,7 +5,7 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BASE = "https://okknovipazar.github.io/okk-novi-pazar/"
+BASE = "https://okknovipazar.rs/"
 OUTPUT = ROOT / "vesti"
 
 def slug(text):
