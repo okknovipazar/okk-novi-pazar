@@ -354,6 +354,16 @@
     },
     {
       "kolo": 6,
+      "datum": "2026-11-12",
+      "vreme": "19:00",
+      "domacin": "Babajić",
+      "gost": "Zekas 75",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 6,
       "datum": "2026-11-13",
       "vreme": "19:00",
       "domacin": "Prva Petoletka",
@@ -388,16 +398,6 @@
       "vreme": "19:00",
       "domacin": "Šabac",
       "gost": "Požarevac",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 6,
-      "datum": "2026-11-15",
-      "vreme": "16:00",
-      "domacin": "Babajić",
-      "gost": "Zekas 75",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-07T21:11:58.889029+00:00"
+  "azurirano": "2026-11-09T12:30:38.922130+00:00"
 }
