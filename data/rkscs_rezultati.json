@@ -336,20 +336,20 @@
       "kolo": 5,
       "datum": "2026-11-07",
       "vreme": "19:00",
-      "domacin": "Šabac",
-      "gost": "Prva Petoletka",
-      "poeni_domacin": 91,
-      "poeni_gost": 92,
+      "domacin": "Svilajnac",
+      "gost": "Miks",
+      "poeni_domacin": 79,
+      "poeni_gost": 74,
       "status": "zavrsena"
     },
     {
       "kolo": 5,
       "datum": "2026-11-07",
-      "vreme": "19:00",
-      "domacin": "Svilajnac",
-      "gost": "Miks",
-      "poeni_domacin": 79,
-      "poeni_gost": 74,
+      "vreme": "19:30",
+      "domacin": "Šabac",
+      "gost": "Prva Petoletka",
+      "poeni_domacin": 91,
+      "poeni_gost": 92,
       "status": "zavrsena"
     },
     {
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-09T12:30:38.922130+00:00"
+  "azurirano": "2026-11-10T12:24:08.322771+00:00"
 }
