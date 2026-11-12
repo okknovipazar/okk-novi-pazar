@@ -358,9 +358,9 @@
       "vreme": "19:00",
       "domacin": "Babajić",
       "gost": "Zekas 75",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 72,
+      "poeni_gost": 89,
+      "status": "zavrsena"
     },
     {
       "kolo": 6,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-10T12:24:08.322771+00:00"
+  "azurirano": "2026-11-12T20:23:59.813932+00:00"
 }
