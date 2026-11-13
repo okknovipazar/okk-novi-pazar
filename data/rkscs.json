@@ -24,6 +24,16 @@
     },
     {
       "pozicija": 3,
+      "tim": "Prva Petoletka",
+      "odigrano": 6,
+      "pobede": 4,
+      "porazi": 2,
+      "kosevi": "498 : 483",
+      "razlika": 15,
+      "bodovi": 10
+    },
+    {
+      "pozicija": 4,
       "tim": "Požarevac",
       "odigrano": 5,
       "pobede": 4,
@@ -33,7 +43,7 @@
       "bodovi": 9
     },
     {
-      "pozicija": 4,
+      "pozicija": 5,
       "tim": "Šabac",
       "odigrano": 5,
       "pobede": 4,
@@ -43,7 +53,7 @@
       "bodovi": 9
     },
     {
-      "pozicija": 5,
+      "pozicija": 6,
       "tim": "Zekas 75",
       "odigrano": 6,
       "pobede": 3,
@@ -51,16 +61,6 @@
       "kosevi": "494 : 461",
       "razlika": 33,
       "bodovi": 9
-    },
-    {
-      "pozicija": 6,
-      "tim": "Prva Petoletka",
-      "odigrano": 5,
-      "pobede": 3,
-      "porazi": 2,
-      "kosevi": "421 : 410",
-      "razlika": 11,
-      "bodovi": 8
     },
     {
       "pozicija": 7,
@@ -114,6 +114,16 @@
     },
     {
       "pozicija": 12,
+      "tim": "Napredak Junior",
+      "odigrano": 6,
+      "pobede": 0,
+      "porazi": 6,
+      "kosevi": "421 : 507",
+      "razlika": -86,
+      "bodovi": 6
+    },
+    {
+      "pozicija": 13,
       "tim": "Polet",
       "odigrano": 5,
       "pobede": 0,
@@ -123,7 +133,7 @@
       "bodovi": 5
     },
     {
-      "pozicija": 13,
+      "pozicija": 14,
       "tim": "Plana",
       "odigrano": 5,
       "pobede": 0,
@@ -131,17 +141,7 @@
       "kosevi": "356 : 409",
       "razlika": -53,
       "bodovi": 5
-    },
-    {
-      "pozicija": 14,
-      "tim": "Napredak Junior",
-      "odigrano": 5,
-      "pobede": 0,
-      "porazi": 5,
-      "kosevi": "348 : 430",
-      "razlika": -82,
-      "bodovi": 5
     }
   ],
-  "azurirano": "2026-11-12T20:54:09.271261+00:00"
+  "azurirano": "2026-11-13T20:56:44.436131+00:00"
 }
