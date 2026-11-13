@@ -368,9 +368,9 @@
       "vreme": "19:00",
       "domacin": "Prva Petoletka",
       "gost": "Napredak Junior",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 77,
+      "poeni_gost": 73,
+      "status": "zavrsena"
     },
     {
       "kolo": 6,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-12T20:23:59.813932+00:00"
+  "azurirano": "2026-11-13T20:27:59.010252+00:00"
 }
