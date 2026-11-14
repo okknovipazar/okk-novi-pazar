@@ -5,12 +5,12 @@
     {
       "pozicija": 1,
       "tim": "Železničar",
-      "odigrano": 5,
-      "pobede": 5,
+      "odigrano": 6,
+      "pobede": 6,
       "porazi": 0,
-      "kosevi": "482 : 381",
-      "razlika": 101,
-      "bodovi": 10
+      "kosevi": "569 : 445",
+      "razlika": 124,
+      "bodovi": 12
     },
     {
       "pozicija": 2,
@@ -64,6 +64,16 @@
     },
     {
       "pozicija": 7,
+      "tim": "Miks",
+      "odigrano": 6,
+      "pobede": 3,
+      "porazi": 3,
+      "kosevi": "450 : 484",
+      "razlika": -34,
+      "bodovi": 9
+    },
+    {
+      "pozicija": 8,
       "tim": "Novi Pazar",
       "odigrano": 5,
       "pobede": 3,
@@ -73,23 +83,13 @@
       "bodovi": 8
     },
     {
-      "pozicija": 8,
+      "pozicija": 9,
       "tim": "Smederevo 1953",
       "odigrano": 5,
       "pobede": 3,
       "porazi": 2,
       "kosevi": "377 : 382",
       "razlika": -5,
-      "bodovi": 8
-    },
-    {
-      "pozicija": 9,
-      "tim": "Miks",
-      "odigrano": 5,
-      "pobede": 3,
-      "porazi": 2,
-      "kosevi": "386 : 397",
-      "razlika": -11,
       "bodovi": 8
     },
     {
@@ -143,5 +143,5 @@
       "bodovi": 5
     }
   ],
-  "azurirano": "2026-11-13T20:56:44.436131+00:00"
+  "azurirano": "2026-11-14T17:41:31.414526+00:00"
 }
