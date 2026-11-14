@@ -398,9 +398,9 @@
       "vreme": "19:00",
       "domacin": "Šabac",
       "gost": "Požarevac",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 72,
+      "poeni_gost": 83,
+      "status": "zavrsena"
     },
     {
       "kolo": 6,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-14T20:11:38.144303+00:00"
+  "azurirano": "2026-11-14T21:13:33.563271+00:00"
 }
