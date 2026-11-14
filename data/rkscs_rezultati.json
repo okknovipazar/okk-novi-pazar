@@ -388,9 +388,9 @@
       "vreme": "19:00",
       "domacin": "Plana",
       "gost": "Smederevo 1953",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 86,
+      "poeni_gost": 65,
+      "status": "zavrsena"
     },
     {
       "kolo": 6,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-14T18:08:08.319817+00:00"
+  "azurirano": "2026-11-14T20:11:38.144303+00:00"
 }
