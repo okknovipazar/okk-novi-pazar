@@ -378,9 +378,9 @@
       "vreme": "16:30",
       "domacin": "Miks",
       "gost": "Železničar",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 64,
+      "poeni_gost": 87,
+      "status": "zavrsena"
     },
     {
       "kolo": 6,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-13T20:27:59.010252+00:00"
+  "azurirano": "2026-11-14T18:08:08.319817+00:00"
 }
