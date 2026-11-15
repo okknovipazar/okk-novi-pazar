@@ -1,12 +1,14 @@
 {
-  "title": "1 MRL Zapad Novi Pazar - Svilajnac",
+  "title": "Novi Pazar – Svilajnac | video prenos",
   "date": "2026-11-15",
   "score": "",
   "youtube_url": "https://www.youtube.com/watch?v=eTeR3Ml6Ops",
-  "is_live": true,
-  "live_verified_at": "2026-11-15T18:09:48.426597+00:00",
+  "is_live": false,
+  "live_verified_at": "",
   "checked_at": "2026-11-15T18:09:48.426597+00:00",
   "video_published_at": "2026-11-14T23:02:23Z",
   "source": "DIGITAL Score TV",
-  "embeddable": true
+  "embeddable": null,
+  "manual_video_id": "eTeR3Ml6Ops",
+  "manual_until": "2026-11-16T00:00:00+01:00"
 }
