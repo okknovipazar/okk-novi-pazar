@@ -408,9 +408,9 @@
       "vreme": "18:00",
       "domacin": "Polet",
       "gost": "Paraćin",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 90,
+      "poeni_gost": 83,
+      "status": "zavrsena"
     },
     {
       "kolo": 6,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-14T21:13:33.563271+00:00"
+  "azurirano": "2026-11-15T19:22:23.683558+00:00"
 }
