@@ -119,6 +119,13 @@
         const v=await response.json();
         const id=youtubeVideoId(v.youtube_url);
         if(!id) throw new Error('YouTube link nije ispravan');
+        const manualActive=Boolean(v.manual_until && Date.now()<Date.parse(v.manual_until) && v.manual_video_id===id);
+        if(manualActive) {
+          const heading=document.getElementById('video-heading');
+          if(heading) heading.textContent='Video prenos utakmice';
+          const eyebrow=document.querySelector('.panelhead .eyebrow');
+          if(eyebrow) eyebrow.textContent='DScore · VIDEO PRENOS';
+        }
         title.textContent=v.title||'OKK Novi Pazar — video utakmice';
         if(v.date && /^\d{4}-\d{2}-\d{2}$/.test(v.date)) date.textContent=`Objavljeno / datum utakmice: ${v.date.slice(8)}.${v.date.slice(5,7)}.${v.date.slice(0,4)}.`;
         else date.textContent='Poslednji dostupni video iz klupske evidencije';
@@ -126,7 +133,7 @@
         button.href=`https://www.youtube.com/watch?v=${id}`;
         box.replaceChildren();
         const play=document.createElement('button');
-        play.className='play';play.type='button';play.textContent='▶ Gledaj na sajtu';
+        play.className='play';play.type='button';play.textContent=manualActive?'▶ GLEDAJ PRENOS':'▶ Gledaj na sajtu';
         play.setAttribute('aria-label','Pokreni YouTube snimak');
         play.addEventListener('click',()=>{
           const frame=document.createElement('iframe');
