@@ -213,6 +213,18 @@ def main():
         selected = None
 
     out = dict(old)
+    # Privremeni klupski link ostaje aktivan do zadatog vremena,
+    # osim kada je YouTube API potvrdio bas taj aktivni prenos.
+    pinned_id = str(old.get('manual_video_id') or '')
+    pinned_until = old.get('manual_until') or ''
+    try:
+        pinned_active = (bool(pinned_id) and
+                         now < datetime.fromisoformat(pinned_until.replace('Z', '+00:00')))
+    except (ValueError, TypeError):
+        pinned_active = False
+    if pinned_active and (not selected or
+                          selected[0]['id'] != pinned_id):
+        selected = None
     if selected:
         video, game, is_live = selected
         # Do not regress from a newer recorded fixture to an older one.
