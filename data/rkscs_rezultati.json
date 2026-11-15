@@ -418,9 +418,9 @@
       "vreme": "19:00",
       "domacin": "Novi Pazar",
       "gost": "Svilajnac",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 92,
+      "poeni_gost": 68,
+      "status": "zavrsena"
     },
     {
       "kolo": 7,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-15T19:22:23.683558+00:00"
+  "azurirano": "2026-11-15T20:12:07.649588+00:00"
 }
