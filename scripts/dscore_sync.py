@@ -90,7 +90,15 @@ def match_video(video, games):
         gap = abs((date - datetime.strptime(game['datum'], '%Y-%m-%d').date()).days)
         if gap <= 10:
             options.append((gap, game))
-    return min(options, key=lambda pair: pair[0])[1] if options else None
+    if options:
+        return min(options, key=lambda pair: pair[0])[1]
+
+    # Naslovi DScore prenosa mogu da izostave pun naziv protivnika.
+    # U tom slucaju prihvati samo jedinstvenu utakmicu seniorskog tima
+    # na datum objavljivanja videa, nikada nasumicni mec.
+    same_day = [g for g in games
+                if abs((date - datetime.strptime(g['datum'], '%Y-%m-%d').date()).days) <= 1]
+    return same_day[0] if len(same_day) == 1 else None
 
 
 def eligible_for_live_check(games, now):
@@ -175,13 +183,18 @@ def main():
             matches = []
 
     live_candidates = []
-    if API_KEY and eligible_for_live_check(games, now):
+    # Proveravaj aktivne strimove i ako je raspored kasnio sa azuriranjem.
+    if API_KEY:
         try:
             live_feed = search_live()
             live_videos = api_videos([v['id'] for v in live_feed])
             for video in live_feed:
                 game = match_video(video, games)
-                if not game or game not in eligible_for_live_check(games, now):
+                if not game:
+                    continue
+                # Iskljuci stare utakmice bez obzira na status rasporeda.
+                if abs((datetime.strptime(game['datum'], '%Y-%m-%d').date() -
+                        now.astimezone(BELGRADE).date()).days) > 1:
                     continue
                 item = live_videos.get(video['id'])
                 if allowed_in_serbia(item) and currently_live(item):
@@ -225,12 +238,8 @@ def main():
     if out.get('is_live') and not live_candidates:
         out.update({'is_live':False, 'live_verified_at':''})
     out['checked_at'] = now.isoformat()
-    # Prevent writing on every empty run: allow visible check timestamp only when other fields change.
-    previous = dict(old); previous.pop('checked_at', None)
-    current = dict(out); current.pop('checked_at', None)
-    if current == previous:
-        print('Bez promene fajla.')
-        return
+    # Belezi svaku uspesnu proveru, i kada nema novog videa, da bi
+    # zastareo status automatizacije bio vidljiv na sajtu i u GitHub-u.
     OUTPUT.write_text(json.dumps(out, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     print('Sačuvan novi video status.')
 
