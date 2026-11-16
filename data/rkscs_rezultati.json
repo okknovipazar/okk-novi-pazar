@@ -424,8 +424,18 @@
     },
     {
       "kolo": 7,
-      "datum": "2026-11-21",
-      "vreme": "00:00",
+      "datum": "2026-11-20",
+      "vreme": "18:30",
+      "domacin": "Železničar",
+      "gost": "Novi Pazar",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 7,
+      "datum": "2026-11-20",
+      "vreme": "20:30",
       "domacin": "Požarevac",
       "gost": "Prva Petoletka",
       "poeni_domacin": null,
@@ -435,47 +445,7 @@
     {
       "kolo": 7,
       "datum": "2026-11-21",
-      "vreme": "00:00",
-      "domacin": "Paraćin",
-      "gost": "Šabac",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 7,
-      "datum": "2026-11-21",
-      "vreme": "00:00",
-      "domacin": "Svilajnac",
-      "gost": "Polet",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 7,
-      "datum": "2026-11-21",
-      "vreme": "00:00",
-      "domacin": "Železničar",
-      "gost": "Novi Pazar",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 7,
-      "datum": "2026-11-21",
-      "vreme": "00:00",
-      "domacin": "Smederevo 1953",
-      "gost": "Miks",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 7,
-      "datum": "2026-11-21",
-      "vreme": "00:00",
+      "vreme": "18:00",
       "domacin": "Zekas 75",
       "gost": "Plana",
       "poeni_domacin": null,
@@ -485,9 +455,39 @@
     {
       "kolo": 7,
       "datum": "2026-11-21",
-      "vreme": "00:00",
+      "vreme": "19:00",
+      "domacin": "Svilajnac",
+      "gost": "Polet",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 7,
+      "datum": "2026-11-22",
+      "vreme": "13:00",
+      "domacin": "Smederevo 1953",
+      "gost": "Miks",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 7,
+      "datum": "2026-11-22",
+      "vreme": "14:00",
       "domacin": "Napredak Junior",
       "gost": "Babajić",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 7,
+      "datum": "2026-11-22",
+      "vreme": "16:00",
+      "domacin": "Paraćin",
+      "gost": "Šabac",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-15T20:12:07.649588+00:00"
+  "azurirano": "2026-11-16T10:55:46.948011+00:00"
 }
