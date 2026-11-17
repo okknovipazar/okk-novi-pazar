@@ -435,19 +435,19 @@
     {
       "kolo": 7,
       "datum": "2026-11-20",
-      "vreme": "20:30",
-      "domacin": "Požarevac",
-      "gost": "Prva Petoletka",
+      "vreme": "19:30",
+      "domacin": "Zekas 75",
+      "gost": "Plana",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
     },
     {
       "kolo": 7,
-      "datum": "2026-11-21",
-      "vreme": "18:00",
-      "domacin": "Zekas 75",
-      "gost": "Plana",
+      "datum": "2026-11-20",
+      "vreme": "20:30",
+      "domacin": "Požarevac",
+      "gost": "Prva Petoletka",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-16T10:55:46.948011+00:00"
+  "azurirano": "2026-11-17T10:34:16.866428+00:00"
 }
