@@ -428,9 +428,9 @@
       "vreme": "18:30",
       "domacin": "Železničar",
       "gost": "Novi Pazar",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 105,
+      "poeni_gost": 89,
+      "status": "zavrsena"
     },
     {
       "kolo": 7,
@@ -438,9 +438,9 @@
       "vreme": "19:30",
       "domacin": "Zekas 75",
       "gost": "Plana",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 96,
+      "poeni_gost": 84,
+      "status": "zavrsena"
     },
     {
       "kolo": 7,
@@ -448,9 +448,9 @@
       "vreme": "20:30",
       "domacin": "Požarevac",
       "gost": "Prva Petoletka",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 80,
+      "poeni_gost": 75,
+      "status": "zavrsena"
     },
     {
       "kolo": 7,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-17T10:34:16.866428+00:00"
+  "azurirano": "2026-11-20T21:29:10.056522+00:00"
 }
