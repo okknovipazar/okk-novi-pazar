@@ -25,12 +25,12 @@
     {
       "pozicija": 3,
       "tim": "Svilajnac",
-      "odigrano": 6,
-      "pobede": 5,
+      "odigrano": 7,
+      "pobede": 6,
       "porazi": 1,
-      "kosevi": "442 : 430",
-      "razlika": 12,
-      "bodovi": 11
+      "kosevi": "522 : 503",
+      "razlika": 19,
+      "bodovi": 13
     },
     {
       "pozicija": 4,
@@ -104,6 +104,16 @@
     },
     {
       "pozicija": 11,
+      "tim": "Polet",
+      "odigrano": 7,
+      "pobede": 1,
+      "porazi": 6,
+      "kosevi": "546 : 589",
+      "razlika": -43,
+      "bodovi": 8
+    },
+    {
+      "pozicija": 12,
       "tim": "Plana",
       "odigrano": 7,
       "pobede": 1,
@@ -111,16 +121,6 @@
       "kosevi": "526 : 570",
       "razlika": -44,
       "bodovi": 8
-    },
-    {
-      "pozicija": 12,
-      "tim": "Polet",
-      "odigrano": 6,
-      "pobede": 1,
-      "porazi": 5,
-      "kosevi": "473 : 509",
-      "razlika": -36,
-      "bodovi": 7
     },
     {
       "pozicija": 13,
@@ -143,5 +143,5 @@
       "bodovi": 6
     }
   ],
-  "azurirano": "2026-11-20T23:58:06.876816+00:00"
+  "azurirano": "2026-11-21T21:37:27.957520+00:00"
 }
