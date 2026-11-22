@@ -34,26 +34,16 @@
     },
     {
       "pozicija": 4,
-      "tim": "Zekas 75",
+      "tim": "Šabac",
       "odigrano": 7,
       "pobede": 4,
       "porazi": 3,
-      "kosevi": "590 : 545",
-      "razlika": 45,
+      "kosevi": "584 : 565",
+      "razlika": 19,
       "bodovi": 11
     },
     {
       "pozicija": 5,
-      "tim": "Novi Pazar",
-      "odigrano": 7,
-      "pobede": 4,
-      "porazi": 3,
-      "kosevi": "588 : 576",
-      "razlika": 12,
-      "bodovi": 11
-    },
-    {
-      "pozicija": 6,
       "tim": "Prva Petoletka",
       "odigrano": 7,
       "pobede": 4,
@@ -63,47 +53,67 @@
       "bodovi": 11
     },
     {
-      "pozicija": 7,
-      "tim": "Šabac",
-      "odigrano": 6,
+      "pozicija": 6,
+      "tim": "Novi Pazar",
+      "odigrano": 7,
       "pobede": 4,
-      "porazi": 2,
-      "kosevi": "510 : 473",
-      "razlika": 37,
-      "bodovi": 10
+      "porazi": 3,
+      "kosevi": "588 : 576",
+      "razlika": 12,
+      "bodovi": 11
+    },
+    {
+      "pozicija": 7,
+      "tim": "Zekas 75",
+      "odigrano": 7,
+      "pobede": 4,
+      "porazi": 3,
+      "kosevi": "590 : 545",
+      "razlika": 45,
+      "bodovi": 11
     },
     {
       "pozicija": 8,
-      "tim": "Smederevo 1953",
-      "odigrano": 6,
-      "pobede": 3,
+      "tim": "Miks",
+      "odigrano": 7,
+      "pobede": 4,
       "porazi": 3,
-      "kosevi": "442 : 468",
-      "razlika": -26,
-      "bodovi": 9
+      "kosevi": "538 : 567",
+      "razlika": -29,
+      "bodovi": 11
     },
     {
       "pozicija": 9,
-      "tim": "Miks",
-      "odigrano": 6,
+      "tim": "Paraćin",
+      "odigrano": 7,
       "pobede": 3,
-      "porazi": 3,
-      "kosevi": "450 : 484",
-      "razlika": -34,
-      "bodovi": 9
+      "porazi": 4,
+      "kosevi": "559 : 541",
+      "razlika": 18,
+      "bodovi": 10
     },
     {
       "pozicija": 10,
-      "tim": "Paraćin",
-      "odigrano": 6,
-      "pobede": 2,
+      "tim": "Smederevo 1953",
+      "odigrano": 7,
+      "pobede": 3,
       "porazi": 4,
-      "kosevi": "467 : 467",
-      "razlika": 0,
-      "bodovi": 8
+      "kosevi": "525 : 556",
+      "razlika": -31,
+      "bodovi": 10
     },
     {
       "pozicija": 11,
+      "tim": "Babajić",
+      "odigrano": 7,
+      "pobede": 2,
+      "porazi": 5,
+      "kosevi": "451 : 547",
+      "razlika": -96,
+      "bodovi": 9
+    },
+    {
+      "pozicija": 12,
       "tim": "Polet",
       "odigrano": 7,
       "pobede": 1,
@@ -113,7 +123,7 @@
       "bodovi": 8
     },
     {
-      "pozicija": 12,
+      "pozicija": 13,
       "tim": "Plana",
       "odigrano": 7,
       "pobede": 1,
@@ -123,25 +133,15 @@
       "bodovi": 8
     },
     {
-      "pozicija": 13,
-      "tim": "Babajić",
-      "odigrano": 6,
-      "pobede": 1,
-      "porazi": 5,
-      "kosevi": "377 : 480",
-      "razlika": -103,
-      "bodovi": 7
-    },
-    {
       "pozicija": 14,
       "tim": "Napredak Junior",
-      "odigrano": 6,
+      "odigrano": 7,
       "pobede": 0,
-      "porazi": 6,
-      "kosevi": "421 : 507",
-      "razlika": -86,
-      "bodovi": 6
+      "porazi": 7,
+      "kosevi": "488 : 581",
+      "razlika": -93,
+      "bodovi": 7
     }
   ],
-  "azurirano": "2026-11-21T21:37:27.957520+00:00"
+  "azurirano": "2026-11-22T17:47:05.395843+00:00"
 }
