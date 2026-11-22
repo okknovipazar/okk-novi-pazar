@@ -468,9 +468,9 @@
       "vreme": "13:00",
       "domacin": "Smederevo 1953",
       "gost": "Miks",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 83,
+      "poeni_gost": 88,
+      "status": "zavrsena"
     },
     {
       "kolo": 7,
@@ -478,9 +478,9 @@
       "vreme": "14:00",
       "domacin": "Napredak Junior",
       "gost": "Babajić",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 67,
+      "poeni_gost": 74,
+      "status": "zavrsena"
     },
     {
       "kolo": 7,
@@ -488,9 +488,9 @@
       "vreme": "16:00",
       "domacin": "Paraćin",
       "gost": "Šabac",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 92,
+      "poeni_gost": 74,
+      "status": "zavrsena"
     },
     {
       "kolo": 8,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-22T00:37:39.229240+00:00"
+  "azurirano": "2026-11-22T17:21:02.394703+00:00"
 }
