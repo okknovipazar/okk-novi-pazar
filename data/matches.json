@@ -67,5 +67,16 @@
     "away_logo": "/media/225px-okknovipazar.png",
     "venue": "Prehrambeno-ugostiteljska škola",
     "status": "zakazana"
+  },
+  {
+    "round": "8. Kolo",
+    "date": "2026-11-29",
+    "time": "17:00",
+    "home": "Okk Novi Pazar",
+    "away": "Kk Smederevo",
+    "home_logo": "/media/f6542eca-7a3d-4cc6-9089-cff2ba7507ac.png",
+    "away_logo": "/media/kksmederevo1953.png",
+    "venue": "Dogus dvorana",
+    "status": "zakazana"
   }
 ]
