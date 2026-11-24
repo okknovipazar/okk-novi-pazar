@@ -3,6 +3,16 @@
   "channel_name": "RKS Centralna Srbija",
   "videos": [
     {
+      "id": "HrecOxgRcSg",
+      "title": "7. kolo KK \"Železničar\" -  OKK \"Novi Pazar\" 105:89",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T08:51:03Z",
+      "duration_seconds": 4694,
+      "youtube_url": "https://www.youtube.com/watch?v=HrecOxgRcSg",
+      "thumbnail_url": "https://i.ytimg.com/vi/HrecOxgRcSg/hqdefault.jpg",
+      "source": "RKS Centralna Srbija"
+    },
+    {
       "id": "x4GO7p8t92Q",
       "title": "6.kolo OKK \"Novi Pazar\" - KK \"Svilajnac\" 92:68",
       "date": "2026-11-16",
@@ -133,5 +143,5 @@
       "source": "RKS Centralna Srbija"
     }
   ],
-  "updated_at": "2026-11-16T11:29:01.128782+00:00"
+  "updated_at": "2026-11-24T14:49:29.073573+00:00"
 }
