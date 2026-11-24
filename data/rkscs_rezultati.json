@@ -535,9 +535,9 @@
     {
       "kolo": 8,
       "datum": "2026-11-29",
-      "vreme": "17:00",
-      "domacin": "Novi Pazar",
-      "gost": "Smederevo 1953",
+      "vreme": "18:00",
+      "domacin": "Miks",
+      "gost": "Zekas 75",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
@@ -546,8 +546,8 @@
       "kolo": 8,
       "datum": "2026-11-29",
       "vreme": "18:00",
-      "domacin": "Miks",
-      "gost": "Zekas 75",
+      "domacin": "Novi Pazar",
+      "gost": "Smederevo 1953",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-22T22:44:34.399254+00:00"
+  "azurirano": "2026-11-24T23:14:18.682345+00:00"
 }
