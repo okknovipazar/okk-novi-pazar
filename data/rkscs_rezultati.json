@@ -564,8 +564,8 @@
     },
     {
       "kolo": 9,
-      "datum": "2026-12-02",
-      "vreme": "00:00",
+      "datum": "2026-12-01",
+      "vreme": "21:00",
       "domacin": "Paraćin",
       "gost": "Prva Petoletka",
       "poeni_domacin": null,
@@ -575,17 +575,7 @@
     {
       "kolo": 9,
       "datum": "2026-12-02",
-      "vreme": "00:00",
-      "domacin": "Svilajnac",
-      "gost": "Požarevac",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
-    },
-    {
-      "kolo": 9,
-      "datum": "2026-12-02",
-      "vreme": "00:00",
+      "vreme": "18:30",
       "domacin": "Železničar",
       "gost": "Šabac",
       "poeni_domacin": null,
@@ -595,7 +585,7 @@
     {
       "kolo": 9,
       "datum": "2026-12-02",
-      "vreme": "00:00",
+      "vreme": "19:00",
       "domacin": "Smederevo 1953",
       "gost": "Polet",
       "poeni_domacin": null,
@@ -605,7 +595,7 @@
     {
       "kolo": 9,
       "datum": "2026-12-02",
-      "vreme": "00:00",
+      "vreme": "19:00",
       "domacin": "Zekas 75",
       "gost": "Novi Pazar",
       "poeni_domacin": null,
@@ -615,7 +605,17 @@
     {
       "kolo": 9,
       "datum": "2026-12-02",
-      "vreme": "00:00",
+      "vreme": "19:00",
+      "domacin": "Babajić",
+      "gost": "Plana",
+      "poeni_domacin": null,
+      "poeni_gost": null,
+      "status": "zakazana"
+    },
+    {
+      "kolo": 9,
+      "datum": "2026-12-02",
+      "vreme": "20:00",
       "domacin": "Napredak Junior",
       "gost": "Miks",
       "poeni_domacin": null,
@@ -625,9 +625,9 @@
     {
       "kolo": 9,
       "datum": "2026-12-02",
-      "vreme": "00:00",
-      "domacin": "Babajić",
-      "gost": "Plana",
+      "vreme": "20:30",
+      "domacin": "Svilajnac",
+      "gost": "Požarevac",
       "poeni_domacin": null,
       "poeni_gost": null,
       "status": "zakazana"
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-24T23:14:18.682345+00:00"
+  "azurirano": "2026-11-25T17:33:45.550966+00:00"
 }
