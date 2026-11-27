@@ -498,9 +498,9 @@
       "vreme": "20:30",
       "domacin": "Prva Petoletka",
       "gost": "Babajić",
-      "poeni_domacin": null,
-      "poeni_gost": null,
-      "status": "zakazana"
+      "poeni_domacin": 106,
+      "poeni_gost": 88,
+      "status": "zavrsena"
     },
     {
       "kolo": 8,
@@ -1823,5 +1823,5 @@
       "status": "zakazana"
     }
   ],
-  "azurirano": "2026-11-25T17:33:45.550966+00:00"
+  "azurirano": "2026-11-27T03:11:47.620553+00:00"
 }
